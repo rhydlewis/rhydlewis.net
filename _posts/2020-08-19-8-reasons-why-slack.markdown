@@ -8,7 +8,7 @@ tags:
 - talk
 ---
 
-I gave a talk about the benefits of Slack at a [Sullivan & Stanley](https://www.sullivanstanley.com) internal event in July. Here's a blogified version of the talk - enjoy!
+I gave a talk about the benefits of Slack at a [Sullivan & Stanley](https://www.sullivanstanley.com) internal event in July. Here's a blogified version - enjoy!
 <!--more-->
 
 ## Synopsis
@@ -17,33 +17,31 @@ I gave a talk about the benefits of Slack at a [Sullivan & Stanley](https://www.
 * Why it became an important part of our workflow
 * How it helped us do more
 
-By the end of this post, you should know more about some of the benefits and drawbacks Slack could offer to your company.
-
 ## Background
 
-In 2014, I was working at a consultancy that helped companies and organisations solve difficult software problems. Communication was  - and still is - paramount. As a distributed team, we tried using messaging and office collaboration tools like Yammer, Skype and Google+ but none of these seemed felt right.
+In 2014, I was working at a consultancy that helped companies and organisations solve difficult software problems. As a distributed team, we tried using messaging and office collaboration tools like Yammer, Skype and Google+ but none of these seemed right.
 
-Whilst working at a financial publishing client, our team - a mix of consultants and employees - had difficulty using a viable collaboration tool. As consultants, we couldn't access the client's internal messaging apps and tools like Skype were explicitly blocked by the company.
+Whilst working at a financial publishing client, our team - a mix of consultants and employees - had difficulty finding a viable collaboration tool. As consultants, we couldn't access the client's internal messaging apps and tools like Skype were explicitly blocked by the company.
 
-Enter [Slack](www.slack.com), just at the right time. This new app - around for less than a year - was already getting positive news. We installed it, we tried it and we liked it: it solved some of our problems straight away. I created a workspace for my company to use and within a few weeks we had 10 users and within 6 months, 130 had signed up.
+Enter [Slack](www.slack.com), just at the right time. This new app - around for less than a year - was already getting positive news. We installed it and found that it solved some of our problems straight away. I created a workspace for the consultancy and, within a few months, we had 130 users signed up.
 
 ## Why Slack worked
 
 So, why did Slack succeed where other tools failed? The stand out reasons for me are:
 
-- easy to install and start using
+- ease of installation
 - lack of connectivity hassle
-- it didn't feel corporate or boring - it was fun to use
-- it allowed us to stay in touch without hassle, there was no admin controlling the set up so conversations and groups could grow organically
+- doesn't feel corporate or boring; it was fun to use
+- it allowed us all to stay in touch without any admin overheads; conversations and groups grew organically
 
-People started to set up specific groups to:
+People set up specific groups to:
 
 - share status updates across the company/teams
-- keep in touch with distributed colleagues
-- start team discussions
-- talk about social, fun non-work topics
+- keep in touch with colleagues working at other client sites
+- start team and client discussions
+- talk about social and non-work topics
 
-Then people realised we could use it to help us:
+Then we saw increased use to:
 
 - promote fund raising and corporate responsibility actions
 - create and share help, how-to, FAQs content
@@ -53,11 +51,6 @@ Then people realised we could use it to help us:
 - improve our hiring and interview
 - co-ordinate our sales effort
 - easily integrate and receive updates from other apps and services
-
-Some of the problems we observed included:
-
-1. Slack gets noisy - fast. There is a lot of chatter so trying to keep up became pointless.
-2. Slack stores your data on their servers which is a risk for some companies.
 
 ## Traits
 
