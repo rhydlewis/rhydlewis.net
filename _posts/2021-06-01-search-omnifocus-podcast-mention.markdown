@@ -9,8 +9,6 @@ tags:
 - workflow
 ---
 
-# Automators podcast recommends Search OmniFocus
-
 Nice surprise to hear the presenters of [Automators podcast](https://www.relay.fm/automators) mention my Alfred workflow last week (thanks to [Vero](https://twitter.com/vero) from the [Alfred](https://twitter.com/alfredapp) team for letting me know).
 
 [David Sparks](https://mobile.twitter.com/MacSparky) describes the workflow as a "game changer" and that he's "not found a faster way to get to a target location [in OmniFocus]". Thanks to [Rosemary Orchard](https://mobile.twitter.com/rosemaryorchard) for mentioning me as the author too.
