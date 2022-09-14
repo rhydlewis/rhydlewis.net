@@ -2,7 +2,7 @@
 comment: false
 date: 2022-07-19T15:48:00
 title: "Autonomy without purpose is a bad mix"
-permalink: /blog/2021/6/1/:slug
+permalink: /blog/2022/7/19/:slug
 tags:
 - agile
 - softwaredevelopment
