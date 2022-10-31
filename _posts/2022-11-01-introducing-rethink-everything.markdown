@@ -2,7 +2,7 @@
 comment: false
 date: 2022-11-01T08:00:00
 title: "Introducing Rethink Everything with Rhyd Lewis"
-permalink: /blog/2022/9/13/:slug
+permalink: /blog/2022/11/01/:slug
 tags:
 
 - podcast
