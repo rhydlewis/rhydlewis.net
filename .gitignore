@@ -2,9 +2,10 @@
 *~
 *.sw[p_]
 
-# Sublime Text
+# Sublime Text & IntelliJ
 *.sublime-project
 *.sublime-workspace
+.idea/
 
 # Ruby Gem
 *.gem
