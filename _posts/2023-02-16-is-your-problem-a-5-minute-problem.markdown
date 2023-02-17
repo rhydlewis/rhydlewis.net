@@ -9,7 +9,7 @@ tags:
 - life
 ---
 
-I still benefit today from advice given to me more than 20 years ago on how deal with problems. 
+I still benefit today from advice given to me more than 20 years ago on how to deal with problems. 
 
 I worked for a tech firm providing services to TV companies. A small app I built collated viewer feedback and sent an email summary every hour or so to our customer (a notoriously irate executive). The app worked most of the time but it would occasionally re-send data. Late on Friday and unable to determine why, I was dubious about running the service unsupervised during our first live weekend. Assuming that our customer would be away until Monday morning, I disabled the app until then so that I could double-check everything before sharing the weekend's feedback.
 
