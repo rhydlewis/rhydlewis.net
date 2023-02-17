@@ -19,4 +19,4 @@ Monday morning. I find my manager, make a profuse apology and explain the gravit
 
 Realisation dawns. I'd wasted time & energy on an undeserving problem. Two days stress & worry for a flash in the pan. I made a 5 minute problem into something far worse.
 
-Even since then, I try to gauge if a problem feels like a 5 minute, 5 hour, 5 day, 5 week or 5 month problem. In my experience, most are 5 minute problems so there's no point devoting more time than this towards them. Fix the problem, learn from it but then move on to what really deserves your time and attention.
+Ever since then, I try to gauge if a problem feels like a 5 minute, 5 hour, 5 day, 5 week or 5 month problem. In my experience, most are 5 minute problems so there's no point devoting more time than this towards them. Fix the problem, learn from it but then move on to what really deserves your time and attention.
