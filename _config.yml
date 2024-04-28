@@ -69,8 +69,8 @@ yandex_site_verification :
 naver_site_verification  :
 
 # Social Sharing
-twitter:
-  username               : whitebeargames
+# twitter:
+#   username               : whitebeargames
 github:
   username               : rhydlewis
 og_image                 : # Open Graph/Twitter default site image
@@ -93,7 +93,7 @@ analytics:
 author:
   #name             : "Rhyd Lewis"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "Product management & software delivery consultant"
+  bio              : "Software delivery consultant & guitar dabbler"
   location         : "Whitstable, UK"
   # email            : "rhyd@hey.com"
   links:
@@ -106,9 +106,9 @@ author:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
       # url: "https://rhydlewis.net"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/whitebeargames"
+    - label: "Linktr.ee"
+      icon: "fas fa-external-link-square-alt"
+      url: "https://linktr.ee/rhyd.lewis"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/whitebeargames"

@@ -2,8 +2,8 @@
 main:
   # - title: "About"
   #   url: /about
-  - title: "Services"
-    url: /services
+  # - title: "Services"
+  #   url: /services
   - title: "Blog"
     url: /
   - title: "Book Notes"
