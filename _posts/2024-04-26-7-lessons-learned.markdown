@@ -37,4 +37,6 @@ Stories and examples about leaning in and taking on challenges outside of my com
 7. **Life > Work**<br/>
 How it's important — no matter how annoyed or frustrated work can be at times — to remember that life is more important. Keeping this perspective in mind has helped me deal with challenging situations and maintain a sense of balance.
 
-I enjoyed taking the time to think about all of this. Trying to articulate them in a meaningful way took longer than I expected. I appreciated the thoughtful questions afterwards and a couple of these have made me adjust my thinking on some of the points I mentioned.
+Taking the time to consider — _waves hands in air_ — all of this and articulate my thinking in a meaningful way definitely took longer than I expected. That's probably another lesson there... I really enjoyed the event and I appreciated the thoughtful questions afterwards (a couple of which have made me adjust my thinking on some of the points - there's progress for you). What fun - cheers.
+
+
