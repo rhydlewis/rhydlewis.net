@@ -9,7 +9,7 @@ tags:
 - life
 ---
 
-Last night, I had the opportunity to present a talk on idea - well, ideas - that I've been mulling over for a while. I've been reflecting on the challenges and opportunities I encountered between 2017 and 2023 when I wasn't working for [Equal Experts](www.equalexperts.com). During this time, I worked for and with a number of companies, and based on my experiences, I identified 7 lessons that I think are relevant and valuable to me today. The talk — **"7 Lessons Learned During 2,500 Days Outside Equal Experts"** — seemed to be well-received by the attendees at the Equal Experts Network Thursday event. 
+Last night, I had the opportunity to present a talk on an idea - well, ideas - that I've been mulling over for a while. I've been reflecting on the challenges and opportunities I encountered between 2017 and 2023 when I wasn't working for [Equal Experts](www.equalexperts.com). During this time, I worked for and with a number of companies, and based on my experiences, I identified 7 lessons that I think are relevant and valuable to me today. The talk — **"7 Lessons Learned During 2,500 Days Outside Equal Experts"** — seemed to be well-received by the attendees at the Equal Experts Network Thursday event. 
 
 ![](/assets/2024-04-25-talk.jpg)
 _Presenting at the Equal Experts office in Farringdon. Hands in pockets, tut tut_
