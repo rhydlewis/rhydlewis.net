@@ -67,4 +67,4 @@ tag: macbook
 <li>The system clock reset itself to Jan 1 2001 after I restarted using the cloned external drive (assuming because I'd disconnected the battery (?) for longer than expected). Resulted in some folders showing a modification date on Jan 1st. Odd</li>
 </ul>
   
-![](/assets/ssd+after.png)
+<img src="/img/ssd+after.png" class="img-fluid" alt="TBC" loading="lazy">

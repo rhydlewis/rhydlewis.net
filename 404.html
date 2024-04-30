@@ -1,0 +1,29 @@
+---
+permalink: /404.html
+layout: default
+background: '/img/bg-404.jpg'
+---
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+{% else %}
+<header class="masthead">
+    {% endif %}
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Page not found :(</h1>
+            <span class="subheading">The requested page could not be found.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {% include links.html %}
+
+<span class="caption">
+Header photo by <a href="https://unsplash.com/@introspectivedsgn?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Erik Mclean</a> on <a href="https://unsplash.com/photos/black-asus-laptop-computer-showing-3-00-sxiSod0tyYQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+</span>

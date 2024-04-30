@@ -42,4 +42,4 @@ tags:
 <li>due dates are shown as Lean Kit end dates (see the 2nd card in the Dropped column).</li>
 </ul>
   
-![](/assets/pk+board.png)
+<img src="/img/pk+board.png" class="img-fluid" alt="TBC" loading="lazy">

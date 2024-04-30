@@ -16,6 +16,6 @@ tag: productivity
 
 <p>After checking all notes I expected to see was were in nvAlt, I deleted the Evernote clients from my phone, iPad &amp; Mac and then deactivated my account. </p>
 
-![](/assets/Screen+Shot+2014-01-27+at+19.39.25.png)
+<img src="/img/Screen+Shot+2014-01-27+at+19.39.25.png" class="img-fluid" alt="TBC" loading="lazy">
 
 <p>Onwards and upwards I say.</p>

@@ -26,17 +26,17 @@ You can search for note contents using `.n`.
 
 {% include figure image_path="/assets/alfred-search-notes.png" alt="Search for note contents" caption="Search for note contents" %}
 
-![](/assets/omnifocus-search-notes.png)
+<img src="/img/omnifocus-search-notes.png" class="img-fluid" alt="TBC" loading="lazy">
 
 **Recent items**
 
 Using `.r` will show you the 10 last modified Omnifocus tasks and projects. 
 
-![](/assets/recent-all.png) 
+<img src="/img/recent-all.png" class="img-fluid" alt="TBC" loading="lazy"> 
 
 You can narrow the search scope to non-completed and modified items with `.ra`.
 
-![](/assets/recent-active.png)
+<img src="/img/recent-active.png" class="img-fluid" alt="TBC" loading="lazy">
 
 ## Future updates
 

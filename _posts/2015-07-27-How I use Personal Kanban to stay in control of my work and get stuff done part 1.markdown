@@ -24,14 +24,12 @@ Personal Kanban has 2 simple rules:
   1. visualise your work
   2. limit your work in progress
 
-This is an example board from the [Personal Kanban
-website](http://www.personalkanban.com/pk/personal-kanban-101/). You can see:
+This is an example board from the [Personal Kanban website](https://www.personalkanban.com/personal-kanban-101). You can see:
 
   * work visualised as cards and divided into columns
   * a Work In Progress limit of 5 for work in the _Doing_ state
 
-![](http://personalkanban.com/wp-
-content/uploads/2009/08/whiteboards-050-300x225.jpg)
+<img src="http://personalkanban.com/wp-content/uploads/2009/08/whiteboards-050-300x225.jpg" class="img-fluid" alt="TBC" loading="lazy">
 
 Representing your work like this allows you to:
 
@@ -61,12 +59,12 @@ _2) What's my initial workflow?_
 
 The example workflow:
 
-![](/assets/1437975339651-img.png)
+<img src="/img/1437975339651-img.png" class="img-fluid" alt="TBC" loading="lazy">
 
 helps to explain the theory but doesn't represent how I get things done. I
 added 2 extra columns to help:
 
-![](/assets/1437975359115-img.png)
+<img src="/img/1437975359115-img.png" class="img-fluid" alt="TBC" loading="lazy">
 
   * _Backlog_: a repository of everything I need to do. This is a holding area to prevent me filling the _To Do_ column with too many tasks.
   * _Waiting for_: stuff that I need other people to complete before I can make the next step.

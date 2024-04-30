@@ -35,11 +35,11 @@ tags:
 
 <p>What does this mean? Well, if you have this:</p>
   
-![](/assets/inbox.png)  
+<img src="/img/inbox.png" class="img-fluid" alt="TBC" loading="lazy">  
 
 <p>then you get to see this:</p>
   
-![](/assets/pk.png)
+<img src="/img/pk.png" class="img-fluid" alt="TBC" loading="lazy">
   
 
 <p>Flagging tasks to see them on a board is a stop gap but it works for now. Syncing inbox items to the board is also debatable but, again, it's ok for now. In fact, I'm partway towards my goal. I can:</p>

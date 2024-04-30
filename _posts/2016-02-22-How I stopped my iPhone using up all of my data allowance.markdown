@@ -11,7 +11,7 @@ discovered that I had burned through 80% of my allowance with 10 days left. I
 checked again 3 days later to find I had only 500MB and this soon ran out
 later that evening.
 
-![](/assets/data-ran-out.png)
+<img src="/img/data-ran-out.png" class="img-fluid" alt="TBC" loading="lazy">
 
 Running out of data or turning off Mobile Data entirely is an annoyance. Apps
 like iMessage stop working consistently when out of WiFi range. I checked my
@@ -19,7 +19,7 @@ _Mobile Data Usage_ in **Settings > Mobile Data** and looked for entries with
 an abnormally high value. **System Services > Documents & Sync** seemed to be
 the main culprit.
 
-![](/assets/docs-sync.png)
+<img src="/img/docs-sync.png" class="img-fluid" alt="TBC" loading="lazy">
 
 I read similar reports of data loss to this process but couldn't find a
 definitive fix. Turning off **iCloud Drive > Use Mobile Data** didn't seem to
@@ -39,5 +39,5 @@ side-effect. I cut down the number of apps installed on my phone from 53 to
 18. This means I've 35 fewer opportunities for distraction. This can only be a
 good thing.
 
-![](/assets/new-home-screen.png)
+<img src="/img/new-home-screen.png" class="img-fluid" alt="TBC" loading="lazy">
 

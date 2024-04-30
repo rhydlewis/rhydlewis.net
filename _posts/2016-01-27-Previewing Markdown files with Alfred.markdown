@@ -15,31 +15,31 @@ Seeing the rendered text side-by-side is often useful too. I've created this Alf
 
 To use it, I open Alfred (`⌘-Space`) and type `pmd`.
   
-![](/assets/1453931842312-img.png) 
+<img src="/img/1453931842312-img.png" class="img-fluid" alt="TBC" loading="lazy"> 
 
 then type a query to find the file I want to see:
 
-![](/assets/1453931858776-img.png)
+<img src="/img/1453931858776-img.png" class="img-fluid" alt="TBC" loading="lazy">
 
 Which means I can do split my screen and see my changes as I make them:
   
-![](/assets/1453931901607-img.png)
+<img src="/img/1453931901607-img.png" class="img-fluid" alt="TBC" loading="lazy">
 
 Here's a step-by-step guide on how to create this workflow:
 
 * Open Alfred Preferences and create a new workflow
 * Add a <em>File Filter</em> input with set the keyword as `pmd`
   
-![](/assets/1453931977377-img.png)
+<img src="/img/1453931977377-img.png" class="img-fluid" alt="TBC" loading="lazy">
   
 * From the Finder, drag a Markdown file into the File Types box to ensure Alfred only shows Markdown files in the results
   
-![](/assets/1453932022090-img.png)
+<img src="/img/1453932022090-img.png" class="img-fluid" alt="TBC" loading="lazy">
 
 * Add an <em>Open File</em> action and drag in Marked.app (or whatever app you want to use) from the `Applications` folder
   
-![](/assets/1453932051258-img.png)
+<img src="/img/1453932051258-img.png" class="img-fluid" alt="TBC" loading="lazy">
 
 Link the input to the action and you're done!
   
-![](/assets/1453932095916-img.png)
+<img src="/img/1453932095916-img.png" class="img-fluid" alt="TBC" loading="lazy">

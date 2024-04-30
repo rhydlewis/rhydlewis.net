@@ -52,7 +52,7 @@ stay-in-control-of-my-work-and-get-stuff-done-part-1) explains this). After
 some iteration my process works well. The picture below shows an example of my
 board:
 
-![](/assets/1443525004235-img.png)
+<img src="/img/1443525004235-img.png" class="img-fluid" alt="TBC" loading="lazy">
 
 I move work I want to finish today but can't until later out of the _Backlog_
 into these columns:
