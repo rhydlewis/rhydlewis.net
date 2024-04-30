@@ -45,6 +45,8 @@ tag_archive:
   type: liquid
   path: /tags/
 
+google_analytics: G-J0YW0EETHN
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
