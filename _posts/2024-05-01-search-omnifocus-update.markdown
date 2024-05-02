@@ -10,7 +10,7 @@ tags:
 - workflow
 ---
 
-I pushed a new version — let's say 1.0.13 — of the Search OmniFocus workflow for Alfred today. Couple of minor updates, namely:
+I pushed a new version — let's say 1.0.13 — of the [Search OmniFocus workflow}(https://github.com/rhydlewis/alfred-search-omnifocus) for Alfred today. Couple of minor updates, namely:
 
 * updated all related packages to the latest versions (hopefully this means a banishment for the node vs better-sqllite-3 compatabilty issues)
 * replaced OmniFocus icons with alternatives from the Font Awesome library
