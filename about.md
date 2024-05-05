@@ -23,16 +23,13 @@ gallery_row_1:
     alt: "11:FS Foundry"
   - image_path: /img/logo_hmrc.png
     alt: "HMRC"
-gallery_row_2:
   - image_path: /img/logo_barclays.png
     alt: "Barclays"
+gallery_row_2:
   - image_path: /img/logo_flextrade.png
     alt: "FlexTrade"
   - image_path: /img/logo_homeoffice.png
     alt: "Home Office"
-gallery_row_3:
-  - image_path: /img/logo_caplin.png
-    alt: "Caplin"
   - image_path: /img/logo_mergermarket.png
     alt: "MergerMarket"
   - image_path: /img/logo_telefonica.png
@@ -40,23 +37,21 @@ gallery_row_3:
 
 ---
 
-A blog about how I use technology to stay productive and the music I dabble with. By day, I help software teams deliver excellent products. By night, I play guitar and contemplate writing 'the book'.
+<p class="lead">
+Alright? I'm Rhyd, a consultant & musician based in Whitstable in the UK.
+</p>
 
-## Music & Podcast
+I'm a passionate guitarist, musician and consultant. Music has always been a driving force in my life, whether it's [**playing guitar & composing as myself**](https://open.spotify.com/artist/4pIyMWReoHoNybLHAbzOGK?si=Qs6I9gZgQM26Wwnvt-3CYQ) or dabbling with synths and movie dialogue as my alter-ego, [**entMOOT**](https://open.spotify.com/artist/6HdybP67Hqp9kLsZeXvdgY?si=DtIY5UGHRL6VxmBEMnSemA). When I'm not trying to remember the notes of Gadd9 chord, I might be out for a slow run.
 
-I love creating music and finding out more about what makes people tick.  
+I'm fascinated by what makes people tick so I've been hosting the podcast [**Rethinking Work & Life**](https://rethinkingworklife.net). Although currently on a _slight_ hiatus, the show has been a platform for me to delve into the thinking and experiences of some brilliant individuals. I also maintain the moderately popular productivity [Alfred.app](https://alfred.app/) workflow, ["Search OmniFocus"](https://github.com/rhydlewis/alfred-search-omnifocus) which helps people quickly find and quickly access their [OmniFocus](https://www.omnigroup.com/omnifocus/) information.
 
-{% include gallery id="gallery_row_0" caption="Music & Podcast created by Rhyd" %}
+{% include gallery id="gallery_row_0" caption="" %}
 
 ## Work
 
-I'm a passionate and experienced leader, Rhyd has helped organizations and teams around the world create outstanding products and services by providing his expertise and guidance as a consultant and product manager for over 20 years. 
+With over 20 years of experience in software engineering and product management, I help organizations rethink how they deliver value to their customers. I'm a passionate and experienced leader. I've helped organisations and teams around the world create amazing products by providing expertise and guidance as a consultant, product manager and engineer. I apply lean, agile, and systems thinking principles to solve complex problems. I'm pragmatic, down-to-earth and focus on communication, clarity on 'why' and ensuring everyone feels valued and enjoys working together. 
 
-With a strong background in software engineering and product management, I focus on helping organizations rethink how they deliver value to their customers.
-
-I apply lean, agile, and systems thinking principles to solve complex problems. I'm pragmatic, down-to-earth and focus on communication, clarity on 'why' and ensuring everyone feels valued and enjoys working together.
-
-### Companies Helped
+### Companies I've Helped
 
 {% include gallery id="gallery_row_1" caption="" %}
 {% include gallery id="gallery_row_2" caption="" %}
