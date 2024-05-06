@@ -4,7 +4,6 @@ date: 2023-02-14T18:00:00
 title: "Mass Panic EP Release"
 permalink: /blog/2023/2/14/:slug
 tags:
-- logicpro
 - music
 ---
 

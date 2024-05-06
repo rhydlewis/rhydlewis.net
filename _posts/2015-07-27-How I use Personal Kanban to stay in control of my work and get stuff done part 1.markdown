@@ -4,8 +4,8 @@ date: 2015-07-27T05:37:19+00:00
 title: "How I use Personal Kanban to stay in control of my work and get stuff done (part 1)"
 permalink: /blog/:year/:i_month/:day/:slug
 tags:
-  - OmniFocus
-  - personal-kanban
+- productivity
+- kanban
 ---
 I started using Personal Kanban in 2012 to help me gain control of my work. I
 felt busy but had little sense of making real progress. Using GTD to organise

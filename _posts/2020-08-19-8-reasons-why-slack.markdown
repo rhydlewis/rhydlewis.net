@@ -4,8 +4,7 @@ date: 2020-08-19T18:00:00
 permalink: /blog/2020/07/24/:slug
 excerpt_separator: <!--more-->
 tags:
-- slack
-- talk
+- work
 ---
 
 I gave a talk about the benefits of Slack at a [Sullivan & Stanley](https://www.sullivanstanley.com) internal event in July. Here's a blogified version - enjoy!

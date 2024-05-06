@@ -3,7 +3,7 @@ comment: true
 date: 2014-08-14T06:13:37+00:00
 title: "New MacBook Pro? Why, thank you sir..."
 permalink: /blog/:year/:i_month/:day/:slug
-tag: macbook
+tag: productivity
 ---
 <p>I picked up my new <a href="http://store.apple.com/uk/buy-mac/macbook-pro">MacBook Pro</a> yesterday. It's the 15-inch, 2.5GHz with Retina display with the storage bumped up to 1TB. It is nice and shiny.</p>
 

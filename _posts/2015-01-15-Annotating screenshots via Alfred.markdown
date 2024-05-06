@@ -6,8 +6,6 @@ permalink: /blog/:year/:i_month/:day/:slug
 excerpt_separator: <!--more-->
 tags:
 - productivity
-- Alfred
-- workflow
 ---
 A quick tip on how to quickly annotate a recently taken screenshot using an Alfred workflow.
 <!--more-->

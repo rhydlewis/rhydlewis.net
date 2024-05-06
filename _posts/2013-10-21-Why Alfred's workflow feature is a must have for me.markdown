@@ -4,8 +4,7 @@ date: 2013-10-21T18:28:50+00:00
 title: "Why Alfred's workflow feature is a must have for me"
 permalink: /blog/2013/10/21/why-alfreds-workflow-feature-is-a-must-have-for-me
 tags:
-- Alfred
-- workflow
+- productivity
 ---
 <p><a href="http://www.alfredapp.com">Alfred</a>'s workflow feature continues to impress me with its usefulness. Current favourites include </p>
 

@@ -4,8 +4,8 @@ date: 2014-07-14T17:15:20+00:00
 title: "OmniFocus itch scratched"
 permalink: /blog/:year/:i_month/:day/:slug
 tags:
-- OmniFocus
-- personal-kanban
+- productivity
+- kanban
 ---
 <p>Finally, FINALLY, after 18 months of the worst kind of procrastination, I am synchronising my Personal Kanban board with OmniFocus. <em>Cue polite golf clap</em>.</p>
 

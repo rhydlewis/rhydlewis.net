@@ -3,7 +3,7 @@ comment: true
 date: 2015-02-23T10:06:38+00:00
 title: "Preserving dates when exporting photos and videos from iPhoto"
 permalink: /blog/:year/:i_month/:day/:slug
-tag: photos
+tag: productivity
 ---
 <p>I'm preparing my photo library ready for the release of <a href="https://www.apple.com/osx/photos-preview/">Photos for Mac</a> or some, as yet unnamed, replacement for the alarmingly slow iPhoto. Hat tip to Gabe Macdrifter for this <a href="http://www.macdrifter.com/2015/02/maintenance-and-being-prepared-for-the-mess-of-photo-services.html">excellent article</a> on how to use <a href="http://www.noodlesoft.com/hazel.php">Hazel</a> to sort files by year and month.</p>
 

@@ -5,9 +5,7 @@ date: 2024-05-01T17:57:59
 title: "Search OmniFocus minor update"
 permalink: /blog/2024/05/01/:slug
 tags:
-- OmniFocus
-- Alfred
-- workflow
+- productivity
 ---
 
 I pushed a new version — let's say 1.0.13 — of the [Search OmniFocus workflow](https://github.com/rhydlewis/alfred-search-omnifocus) for Alfred today. Couple of minor updates, namely:

@@ -3,7 +3,7 @@ comment: true
 date: 2012-09-03T18:03:16+00:00
 title: "Exporting OmniFocus as an OPML file"
 permalink: /blog/:year/:i_month/:day/:slug
-tag: OmniFocus
+tag: productivity
 ---
 <p>I joined a OmniFocus/productivity Glassboard group last week. Michael Schechter's request for help (and subsequent <a href="http://bettermess.com/omnifocus-to-mind-map-using-opml-a-geeky-cry-for-help/">blog post</a>) on how to export data from OmniFocus into an OPML file caught my eye.</p>
 

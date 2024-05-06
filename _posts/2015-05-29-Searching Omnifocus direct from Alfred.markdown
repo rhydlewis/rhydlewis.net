@@ -4,10 +4,7 @@ date: 2015-05-29T16:43:39+00:00
 title: "Searching Omnifocus direct from Alfred"
 permalink: /blog/:year/:i_month/:day/:slug
 tags:
-- OmniFocus
-- Alfred
-- workflow
-
+- productivity
 ---
 I spend too much time searching for stuff in Omnifocus. Whilst I can use ⌘-O
 to search for projects and folders within Omnifocus itself, searching for

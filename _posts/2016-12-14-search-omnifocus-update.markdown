@@ -5,10 +5,7 @@ title: "Update on Search Omnifocus"
 permalink: /blog/2016/12/14/:slug
 excerpt_separator: <!--more-->
 tags:
-- OmniFocus
-- Alfred
-- workflow
-
+- productivity
 ---
 
 I made some updates to the [Search Omnifocus](https://github.com/rhydlewis/search-omnifocus) Alfred workflow over the last month or so thanks to some user suggestions. 

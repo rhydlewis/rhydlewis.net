@@ -3,7 +3,7 @@ comment: true
 date: 2012-08-31T17:32:25+00:00
 title: "Goodbye LiveDrive, Hello BackBlaze"
 permalink: /blog/:year/:i_month/:day/:slug
-tag: backup
+tag: productivity
 ---
 I cancelled my LiveDrive account today (well, tried to). In theory, they talk
 a good talk (unlimited storage, excellent customer support) but, in practice,

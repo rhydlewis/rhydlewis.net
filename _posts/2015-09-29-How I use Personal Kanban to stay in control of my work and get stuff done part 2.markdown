@@ -4,9 +4,8 @@ date: 2015-09-29T11:14:15+00:00
 title: "How I use Personal Kanban to stay in control of my work and get stuff done (part 2)"
 permalink: /blog/:year/:i_month/:day/:slug
 tags:
-  - OmniFocus
-  - personal-kanban
-  - productivity
+- productivity
+- kanban
 ---
 Welcome to the second post in my series on how I use Personal Kanban. In the
 [first post](http://rhydlewis.net/blog/2015/7/27/how-i-use-personal-kanban-to-

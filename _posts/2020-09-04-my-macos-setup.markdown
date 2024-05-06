@@ -2,7 +2,7 @@
 date: 2020-09-04T16:39:00
 title: "My macOS set up"
 permalink: /blog/2020/9/4/:slug
-tags: macos
+tags: productivity
 ---
 
 In apropos of — well — nothing, I've written about my current macOS set up. This is a 1 pager that explains what apps I use and, in most cases, why. It's a bit geeky (ok, more than just a bit) but I've enjoyed writing it.

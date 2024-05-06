@@ -5,7 +5,6 @@ date: 2024-05-02T13:13:12
 title: "Interesting Tips from Kevin Kelly's 101 Bits of Additional Advice"
 permalink: /blog/2024/05/02/:slug
 tags:
-- advice
 - life
 ---
 

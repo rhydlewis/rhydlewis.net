@@ -4,9 +4,7 @@ date: 2022-09-13T18:48:00
 title: "Logic Pro to the rescue"
 permalink: /blog/2022/9/13/:slug
 tags:
-- logicpro
 - podcast
-- audiohijack
 ---
 
 I made an audio recording of a Zoom conversation using Rogue Amoeba's superlative [Audio Hijack](https://rogueamoeba.com/audiohijack/) recently. I rushed into it and didn't check how Audio Hijack processed and saved the audio. By default, it created 3 files:

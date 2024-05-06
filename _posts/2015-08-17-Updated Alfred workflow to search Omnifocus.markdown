@@ -5,10 +5,7 @@ title: "Updated Alfred workflow to search Omnifocus"
 permalink: /blog/:year/:i_month/:day/:slug
 excerpt_separator: <!--more-->
 tags:
-- OmniFocus
-- Alfred
-- workflow
-
+- productivity
 ---
 There's a new version of the Search Omnifocus workflow that supports searching & listing contexts and searching nested tasks properly.
 <!--more-->

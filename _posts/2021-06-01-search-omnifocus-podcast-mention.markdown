@@ -4,9 +4,7 @@ date: 2021-06-01T12:00:00
 title: "Automators podcast recommends Search OmniFocus"
 permalink: /blog/2021/6/1/:slug
 tags:
-- OmniFocus
-- Alfred
-- workflow
+- productivity
 ---
 
 Nice surprise to hear the presenters of [Automators podcast](https://www.relay.fm/automators) mention my Alfred workflow last week (thanks to [Vero](https://twitter.com/vero) from the [Alfred](https://twitter.com/alfredapp) team for letting me know).

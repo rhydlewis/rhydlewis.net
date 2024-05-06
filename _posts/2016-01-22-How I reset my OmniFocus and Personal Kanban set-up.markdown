@@ -4,9 +4,8 @@ date: 2016-01-22T09:08:35+00:00
 title: "How I reset my OmniFocus and Personal Kanban set-up"
 permalink: /blog/:year/:i_month/:day/:slug
 tags:
-  - OmniFocus
-  - personal-kanban
-  - productivity
+- productivity
+- kanban
 ---
 I updated my OmniFocus and Personal Kanban setup last week. Whilst writing
 about it last September ([part 1](http://rhydlewis.net/blog/2015/7/27/how-i

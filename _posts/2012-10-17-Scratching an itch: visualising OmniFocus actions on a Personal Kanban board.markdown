@@ -4,9 +4,8 @@ date: 2012-10-17T06:10:05+00:00
 title: "Scratching an itch: visualising OmniFocus actions on a Personal Kanban board"
 permalink: /blog/:year/:i_month/:day/:slug
 tags:
-  - OmniFocus
-  - personal-kanban
-
+- productivity  
+- kanban
 ---
 <p>EDIT: OmniFocus to Personal Kanban now works (for me). <a href="https://rhyd-lewis.squarespace.com/blog/2014/7/14/omnifocus-itch-scratched">More details here</a>.</p><p>I like nearly everything about <a href="http://www.omnigroup.com/applications/omnifocus/">OmniFocus</a> - simple capturing, syncing between computer and phone, etc. - but I'm tired of seeing so many <em>lists</em>. Now, I know that you can perform all manner of perspective wizardry to filter and find things but, in the end, you still see a list that starts at the top and ends at the bottom. This impairs my:</p>
 

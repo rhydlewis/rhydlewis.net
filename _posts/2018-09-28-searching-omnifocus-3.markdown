@@ -4,9 +4,7 @@ date: 2018-09-28T23:29:00
 title: "Searching Omnifocus 3"
 permalink: /blog/2018/09/28/:slug
 tags:
-- OmniFocus
-- Alfred
-- workflow
+- productivity
 ---
 
 OmniFocus 3 is out so I've updated the [Search Omnifocus](https://github.com/rhydlewis/search-omnifocus) Alfred workflow so that it works with this new version and continues to work with OmniFocus 2. 

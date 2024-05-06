@@ -4,9 +4,8 @@ date: 2023-02-16T08:00:00
 title: "Is your problem a 5 minute or a 5 day problem?"
 permalink: /blog/2023/2/16/:slug
 tags:
-- work
-- problem
 - life
+- work
 ---
 
 I still benefit today from advice given to me more than 20 years ago on how to deal with problems. 

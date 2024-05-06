@@ -4,8 +4,8 @@ date: 2016-02-15
 title: "How to visualise your team’s data"
 permalink: /blog/:year/:i_month/:day/:slug
 tags:
- - kanban
- - equalexperts
+- kanban
+- work
 ---
 
 I wrote a 4-part series for [Equal Experts](www.equalexperts.com) on how to  start visualising a software development team's flow metrics. It's a step-by-step guide to get you started

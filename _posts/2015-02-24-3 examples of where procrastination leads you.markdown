@@ -3,8 +3,8 @@ comment: true
 date: 2015-02-24T18:53:35+00:00
 title: "3 examples of where procrastination leads you"
 permalink: /blog/:year/:i_month/:day/:slug
-tags: 
-  - productivity
+tags:
+- productivity
 ---
 On a merry dance that's where. I'm very good at procrastination. In fact, I
 say I'm the world's foremost practitioner on the subject (the procrastinator's

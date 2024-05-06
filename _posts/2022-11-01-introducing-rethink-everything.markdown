@@ -5,7 +5,6 @@ title: "Introducing Rethinking Work & Life with Rhyd Lewis"
 permalink: /blog/2022/11/01/:slug
 tags:
 - podcast
-
 ---
 
 I've started [my own podcast](https://rethinkworklife.net) which launches tomorrow! It aims to uncover the critical and defining moments in life that make people pause, reflect and rethink how they approach work and life. 

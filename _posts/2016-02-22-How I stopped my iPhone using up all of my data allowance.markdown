@@ -3,7 +3,7 @@ comment: true
 date: 2016-02-22T17:30:00+00:00
 title: "How I stopped my iPhone using up all of my data allowance"
 permalink: /blog/:year/:i_month/:day/:slug
-tag: iphone
+tag: productivity
 ---
 I ran into an odd bug with my iPhone and iCloud account last month. My phone
 comes with a 9GB monthly data limit which I rarely exceed. Last month, I

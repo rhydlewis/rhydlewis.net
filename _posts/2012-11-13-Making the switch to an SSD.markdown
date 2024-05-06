@@ -3,7 +3,7 @@ comment: true
 date: 2012-11-13T09:25:47+00:00
 title: "Making the switch to an SSD"
 permalink: /blog/:year/:i_month/:day/:slug
-tag: macbook
+tag: productivity
 ---
 <p>My early 2011 15" MacBook Pro has been somewhat sluggish of late. Apps such as iTunes, Mail and Office take 10+ seconds to open and the whole system feels a second or two behind me. Possible cause is the factory-installed Toshiba hard disk which has given me grief for the last 6 months or so (too many bad sectors, corrupted data not fixable by Disk Utility) so I've made the switch to an SSD. I also decided to upgrade the RAM from 8GB to 16GB since RAM is cheap.</p>
 
