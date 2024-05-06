@@ -63,6 +63,16 @@ I'm fascinated by what makes people tick so I've been hosting the podcast [**Ret
         description="Original songs comprising the unlikely combination of synths, guitars, drums and movie dialogue"
         links=site.data.entmoot_links
       %}
+    </div>
+  </div>
+</section>
+
+<span class="mt-3"></span>
+## Podcasts
+
+<section class="light">
+  <div class="container">
+    <div class="row mx-auto w-100">
       {% include card.html
         image="/img/podcast.png"
         alt="Rhyd Lewis"
