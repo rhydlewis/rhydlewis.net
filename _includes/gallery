@@ -20,10 +20,10 @@
   {% for img in gallery %}
     {% if img.url %}
       <a href="{{ img.url | relative_url }}" {% if img.title %}title="{{ img.title }}"{% endif %}>
-        <img class="figure-img" src="{{ img.image_path | relative_url }}" style="height: 150px;" alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+        <img class="figure-img border" src="{{ img.image_path | relative_url }}" style="height: 150px;" alt="{% if img.alt %}{{ img.alt }}{% endif %}">
       </a>
     {% else %}
-      <img class="figure-img" src="{{ img.image_path | relative_url }}" style="height: 150px;" alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+      <img class="figure-img border" src="{{ img.image_path | relative_url }}" style="height: 150px;" alt="{% if img.alt %}{{ img.alt }}{% endif %}">
     {% endif %}
   {% endfor %}
   {% if include.caption %}

@@ -1,0 +1,6 @@
+- url: https://open.spotify.com/artist/4pIyMWReoHoNybLHAbzOGK?si=Qs6I9gZgQM26Wwnvt-3CYQ
+  text: Listen via Spotify
+  icon: fab fa-spotify
+- url: https://music.apple.com/gb/artist/rhyd-lewis/1716733982
+  text: Listen via Apple
+  icon: fab fa-apple

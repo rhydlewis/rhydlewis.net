@@ -1,0 +1,9 @@
+- url: https://open.spotify.com/show/4UACxKSbtgRbSg5KfFy621?si=c2434a89c3934b58
+  text: Listen via Spotify
+  icon: fab fa-spotify
+- url: https://podcasts.apple.com/gb/podcast/rethinking-work-life-with-rhyd-lewis/id1652090407
+  text: Listen via Apple Podcasts
+  icon: fab fa-apple
+- url: https://subscribe.acast.com/63440d1a71ca7a0012e0f3d1
+  text: Subscribe
+  icon: fas fa-podcast

@@ -23,6 +23,7 @@ h6, .h6 { @include font-size($h6-font-size); }
 .lead {
   @include font-size($lead-font-size);
   font-weight: $lead-font-weight;
+  font-family: $headings-font-family;
 }
 
 // Type display classes
