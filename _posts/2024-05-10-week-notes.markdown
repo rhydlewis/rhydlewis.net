@@ -1,13 +1,15 @@
 ---
 layout: post
 comment: false
-date: 2024-05-10T15:35:00
+date: 2024-05-10T14:35:00
 title: "End of Week 19 Notes"
 permalink: /blog/2024/05/10/:slug
 background: '/img/bg-week-notes.jpg'
 tags:
 - week-notes
 ---
+
+Here's a summary of this week's notes, something I'm experimenting with for the foreseeable future...
 
 ### 🏃 Running
 
