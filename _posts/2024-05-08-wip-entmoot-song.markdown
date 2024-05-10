@@ -2,7 +2,7 @@
 layout: post
 comment: false
 date: 2024-05-08T18:13:12
-title: "'The Price of Immortality' - new work in progress entMOOT Song"
+title: "'The Price of Immortality' - new WIP entMOOT Song"
 permalink: /blog/2024/05/08/:slug
 tags:
 - music
@@ -16,7 +16,7 @@ It's a interesting combination of the usual synths, guitar and drums but, for th
 
 `Em - Am - F - Dm - G - Em7 - F maj7(no3)/E - G/B`
 
-Overlaid onto the music, I'm incorporating dialog from one of the best scenes from Indiana Jones & The Last Crusade: Indy, Elsa and Donavan meeting the Grail Knight. He chose... _poorly_...
+Overlaid onto the music, I'm incorporating dialog from one of the best scenes from Indiana Jones & The Last Crusade: Indy, Elsa and Donavan meeting the Grail Knight. "He chose... _poorly_..."
 
 The rough mix is ready, I just need to work through it a little more. I've enjoyed creating this one.
 
