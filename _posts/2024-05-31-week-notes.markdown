@@ -18,7 +18,8 @@ Notes for this week...
 
 ### 🎸 Music
 
-* As per usual, I've parked work on 1 song to work on another... got 
+* As per usual, I've parked work on 1 song to work on another... happy with the outline for it though and got a decent idea for a theme. Struggling with my vocal range though (what a surprise).
+* Saw friends performing at an open mic and decided that I'd give it a crack too.
 
 ### 📦 Projects
 
