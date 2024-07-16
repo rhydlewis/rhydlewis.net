@@ -3,7 +3,7 @@ layout: post
 comment: false
 date: 2024-06-08T23:45:04
 title: "Smashing Pumpkins Live at the O2 in London, June 8 2024"
-permalink: /blog/2024/6/08/:slug
+permalink: /blog/2024/06/08/:slug
 tags:
 - music
 ---

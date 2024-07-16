@@ -3,7 +3,7 @@ layout: post
 comment: false
 date: 2024-06-06T07:07:05
 title: "Don't Give Up"
-permalink: /blog/2024/6/6/:slug
+permalink: /blog/2024/06/06/:slug
 tags:
 - music
 ---
