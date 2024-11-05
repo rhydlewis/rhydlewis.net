@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: false
 date: 2022-07-07T12:00:00
 title: "The Real Problem to Fix"

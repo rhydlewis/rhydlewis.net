@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: false
 date: 2022-11-01T08:00:00
 title: "Introducing Rethinking Work & Life with Rhyd Lewis"

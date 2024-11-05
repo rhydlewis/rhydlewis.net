@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2014-08-14T06:13:37+00:00
 title: "New MacBook Pro? Why, thank you sir..."

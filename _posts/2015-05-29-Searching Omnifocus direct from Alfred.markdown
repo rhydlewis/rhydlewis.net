@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2015-05-29T16:43:39+00:00
 title: "Searching Omnifocus direct from Alfred"

@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2020-06-27T15:00:00+00:00
 title: "Drag Racer - 80's sport theme classic"

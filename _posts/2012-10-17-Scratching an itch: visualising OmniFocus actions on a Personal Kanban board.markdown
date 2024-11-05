@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2012-10-17T06:10:05+00:00
 title: "Scratching an itch: visualising OmniFocus actions on a Personal Kanban board"

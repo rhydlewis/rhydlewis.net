@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2014-05-12T07:15:17+00:00
 title: "Consuming more than I create"

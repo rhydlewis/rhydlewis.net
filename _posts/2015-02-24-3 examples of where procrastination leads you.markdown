@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2015-02-24T18:53:35+00:00
 title: "3 examples of where procrastination leads you"

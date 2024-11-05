@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2014-01-27T19:39:41+00:00
 title: "Goodbye Evernote, Hello nvAlt"

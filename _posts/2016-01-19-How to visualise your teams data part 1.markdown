@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2016-02-15
 title: "How to visualise your team’s data"

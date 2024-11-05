@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2015-03-17T21:17:33+00:00
 title: "Intermission (instrumental acoustic guitar, 00:32)"

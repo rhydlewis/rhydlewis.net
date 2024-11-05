@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2015-07-27T05:37:19+00:00
 title: "How I use Personal Kanban to stay in control of my work and get stuff done (part 1)"

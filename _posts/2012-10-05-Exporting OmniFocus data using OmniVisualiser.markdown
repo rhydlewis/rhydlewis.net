@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2012-10-05T07:35:33+00:00
 title: "Exporting OmniFocus data using OmniVisualiser"

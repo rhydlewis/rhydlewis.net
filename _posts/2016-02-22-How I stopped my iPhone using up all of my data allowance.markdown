@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2016-02-22T17:30:00+00:00
 title: "How I stopped my iPhone using up all of my data allowance"

@@ -1,4 +1,5 @@
 ---
+layout: post
 date: 2020-09-04T16:39:00
 title: "My macOS set up"
 permalink: /blog/2020/9/4/:slug

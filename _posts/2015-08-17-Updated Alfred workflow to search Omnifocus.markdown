@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2015-08-17T19:23:46+00:00
 title: "Updated Alfred workflow to search Omnifocus"

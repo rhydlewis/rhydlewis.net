@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: false
 date: 2023-02-14T18:00:00
 title: "Mass Panic EP Release"

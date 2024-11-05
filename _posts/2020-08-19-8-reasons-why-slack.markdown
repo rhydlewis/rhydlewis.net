@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "8 reasons why Slack can help your company achieve more"
 date: 2020-08-19T18:00:00
 permalink: /blog/2020/07/24/:slug

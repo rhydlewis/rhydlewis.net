@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2015-02-23T10:06:38+00:00
 title: "Preserving dates when exporting photos and videos from iPhoto"

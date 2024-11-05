@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2012-08-24T08:56:51+00:00
 title: "Bartender"

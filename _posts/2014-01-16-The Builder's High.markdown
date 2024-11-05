@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2014-01-16T07:36:02+00:00
 title: "The Builder's High"

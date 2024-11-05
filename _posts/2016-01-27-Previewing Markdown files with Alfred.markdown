@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2016-01-27T22:02:29+00:00
 title: "Previewing Markdown files with Alfred"

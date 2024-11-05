@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2015-02-26T13:06:48+00:00
 title: "First (and only second) update to Soundcloud in 2 years"

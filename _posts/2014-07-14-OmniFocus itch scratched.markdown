@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2014-07-14T17:15:20+00:00
 title: "OmniFocus itch scratched"

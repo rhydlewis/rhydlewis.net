@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2014-05-22T05:58:53+00:00
 title: "Notes from London Lean Kanban day"

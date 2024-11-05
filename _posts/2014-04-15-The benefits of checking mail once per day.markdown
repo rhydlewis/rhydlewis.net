@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2014-04-15T17:48:04+00:00
 title: "The benefits of checking mail once per day"

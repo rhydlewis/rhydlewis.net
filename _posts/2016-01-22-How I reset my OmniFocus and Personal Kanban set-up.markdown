@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2016-01-22T09:08:35+00:00
 title: "How I reset my OmniFocus and Personal Kanban set-up"

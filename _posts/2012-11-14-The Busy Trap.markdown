@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2012-11-14T09:05:23+00:00
 title: "The Busy Trap"

@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2012-08-31T17:32:25+00:00
 title: "Goodbye LiveDrive, Hello BackBlaze"

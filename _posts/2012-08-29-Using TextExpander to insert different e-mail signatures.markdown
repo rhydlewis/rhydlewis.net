@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2012-08-29T06:55:28+00:00
 title: "Using TextExpander to insert different e-mail signatures"

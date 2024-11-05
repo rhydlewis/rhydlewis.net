@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2015-01-15T19:43:02+00:00
 title: "Annotating screenshots via Alfred"

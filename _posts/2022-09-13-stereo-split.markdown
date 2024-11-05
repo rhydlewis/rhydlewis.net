@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: false
 date: 2022-09-13T18:48:00
 title: "Logic Pro to the rescue"

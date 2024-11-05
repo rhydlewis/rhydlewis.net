@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: false
 date: 2021-06-01T12:00:00
 title: "Automators podcast recommends Search OmniFocus"

@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2012-09-03T18:03:16+00:00
 title: "Exporting OmniFocus as an OPML file"

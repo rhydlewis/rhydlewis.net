@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: false
 date: 2016-12-14T11:27:41
 title: "Update on Search Omnifocus"

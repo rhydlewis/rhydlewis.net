@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2012-09-27T07:11:29+00:00
 title: "Valuable thinking time"

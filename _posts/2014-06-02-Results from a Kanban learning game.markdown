@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2014-06-02T06:53:23+00:00
 title: "Results from a Kanban learning game"

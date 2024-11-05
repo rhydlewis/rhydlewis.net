@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2012-11-13T09:25:47+00:00
 title: "Making the switch to an SSD"

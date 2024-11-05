@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2012-08-30T20:33:00+00:00
 title: "Keeping your calendar relevant"

@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2015-08-18T07:25:18+00:00
 title: "Why am I not writing?"

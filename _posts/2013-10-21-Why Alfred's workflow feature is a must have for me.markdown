@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2013-10-21T18:28:50+00:00
 title: "Why Alfred's workflow feature is a must have for me"

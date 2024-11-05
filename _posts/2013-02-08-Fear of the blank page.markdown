@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2013-02-08T21:17:57+00:00
 title: "Fear of the blank page"

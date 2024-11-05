@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: false
 date: 2018-09-28T23:29:00
 title: "Searching Omnifocus 3"

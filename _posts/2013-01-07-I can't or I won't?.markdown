@@ -1,4 +1,5 @@
 ---
+layout: post
 comment: true
 date: 2013-01-07T07:46:03+00:00
 title: "I can't or I won't?"
