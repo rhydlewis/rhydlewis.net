@@ -14,6 +14,6 @@ Called "**Mass Panic**", it's a collection of 4 songs that intersperse movie dia
 
 Mass Panic is available now:
 
-* [Bandcamp - including film dialogue](https://ent-moot.bandcamp.com/album/mass-panic)
+* [Bandcamp - including film dialogue](https://entmootmusic.bandcamp.com/album/mass-panic)
 * [Apple Music - instrumental only](https://music.apple.com/gb/album/mass-panic-ep/1671171758)
 * [Spotify - instrumental only](https://open.spotify.com/album/1CKc3OXsCFRRtnwS83OO9p?si=03c3abf8a7cd4aaf)
