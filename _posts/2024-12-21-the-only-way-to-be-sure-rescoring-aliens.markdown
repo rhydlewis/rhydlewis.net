@@ -2,7 +2,7 @@
 layout: post
 comment: false
 date: 2024-12-21T22:50:12
-title: "’The Only Way To Be Sure’ - Rescoring ALIENS"
+title: "'The Only Way To Be Sure' - Rescoring ALIENS"
 permalink: /blog/2024/12/21/:slug
 tags:
 - music

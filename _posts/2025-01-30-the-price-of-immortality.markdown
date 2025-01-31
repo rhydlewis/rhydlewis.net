@@ -2,7 +2,7 @@
 layout: post
 comment: false
 date: 2025-01-29T18:50:00
-title: "’The Price of Immortality’ - Rescoring Indiana Jones & The Last Crusade"
+title: "'The Price of Immortality' - Rescoring Indiana Jones & The Last Crusade"
 permalink: /blog/2025/01/29/:slug
 tags:
 - music
