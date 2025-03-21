@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tools
+permalink: /tools/
 description: Tools and workflows I've created
 background: '/img/bg-tools.jpg'
 ---
