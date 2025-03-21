@@ -12,7 +12,6 @@ Last updated on Wednesday 21 March 2025...
 
 ## Right now...
 
-
 - reading Alex Gerlis' book "Every Spy A Traitor" (just finished Oliver Burkeman's "Mediatation for Mortals")
 - working on songs for the entMOOT album 'Rescored Vol. One'
 - working at [Equal Experts](https://www.equalexperts.com)
