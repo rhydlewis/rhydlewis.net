@@ -1,0 +1,85 @@
+---
+layout: page
+title: Text to MIDI Converter
+permalink: /tools/text-to-midi/
+description: A simple text chord progression to MIDI generator
+background: '/img/bg-midi.jpg'
+---
+<div class="container">
+    <div class="input-container">
+        <label for="chord-input">Enter chord progression:</label>
+        <textarea id="chord-input" placeholder="Example: C,Am,F,G"></textarea>
+        <div class="help-text">
+            Format: Comma-separated chords (e.g., "C,Am,F,G" or "Cmaj7,Dm7,G7,Cmaj7")
+            <br>Each chord will last for 1 bar in 4/4 time at 120 BPM
+        </div>
+    </div>
+    <div class="settings-container">
+        <div class="setting">
+            <label for="key-signature">Key Signature:</label>
+            <select id="key-signature">
+                <optgroup label="Major Keys">
+                    <option value="C-major">C Major (no accidentals)</option>
+                    <option value="G-major">G Major (1♯)</option>
+                    <option value="D-major">D Major (2♯)</option>
+                    <option value="A-major">A Major (3♯)</option>
+                    <option value="E-major">E Major (4♯)</option>
+                    <option value="B-major">B Major (5♯)</option>
+                    <option value="F#-major">F♯ Major (6♯)</option>
+                    <option value="C#-major">C♯ Major (7♯)</option>
+                    <option value="F-major">F Major (1♭)</option>
+                    <option value="Bb-major">B♭ Major (2♭)</option>
+                    <option value="Eb-major">E♭ Major (3♭)</option>
+                    <option value="Ab-major">A♭ Major (4♭)</option>
+                    <option value="Db-major">D♭ Major (5♭)</option>
+                    <option value="Gb-major">G♭ Major (6♭)</option>
+                    <option value="Cb-major">C♭ Major (7♭)</option>
+                </optgroup>
+                <optgroup label="Minor Keys">
+                    <option value="A-minor">A Minor (no accidentals)</option>
+                    <option value="E-minor">E Minor (1♯)</option>
+                    <option value="B-minor">B Minor (2♯)</option>
+                    <option value="F#-minor">F♯ Minor (3♯)</option>
+                    <option value="C#-minor">C♯ Minor (4♯)</option>
+                    <option value="G#-minor">G♯ Minor (5♯)</option>
+                    <option value="D#-minor">D♯ Minor (6♯)</option>
+                    <option value="A#-minor">A♯ Minor (7♯)</option>
+                    <option value="D-minor">D Minor (1♭)</option>
+                    <option value="G-minor">G Minor (2♭)</option>
+                    <option value="C-minor">C Minor (3♭)</option>
+                    <option value="F-minor">F Minor (4♭)</option>
+                    <option value="Bb-minor">B♭ Minor (5♭)</option>
+                    <option value="Eb-minor">E♭ Minor (6♭)</option>
+                    <option value="Ab-minor">A♭ Minor (7♭)</option>
+                </optgroup>
+            </select>
+        </div>
+    </div>
+    <button id="generate-btn">Generate MIDI</button>
+    <div id="status-message"></div>
+    <div id="download-container" class="hidden">
+        <a id="download-link" class="button">Download MIDI</a>
+    </div>
+
+    <span class="caption">
+    Header image by <a href="https://unsplash.com/@techivation?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Techivation</a> on <a href="https://unsplash.com/photos/a-laptop-computer-sitting-on-top-of-a-wooden-desk-3KO5_x6FfJM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </span>
+      
+</div>
+<script src="https://cdn.jsdelivr.net/npm/tonal/browser/tonal.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsmidgen@0.1.5/lib/jsmidgen.js"></script>
+<script>
+    // Ensure libraries are globally accessible
+    window.jsmidgen = Midi;
+    
+    // Debug Tonal
+    console.log("Tonal library status:", {
+        "window.tonal": typeof window.tonal,
+        "window.Tonal": typeof window.Tonal,
+        "global tonal": typeof tonal,
+        "global Tonal": typeof Tonal,
+        "global Object keys": Object.keys(window).filter(k => k.toLowerCase().includes('tonal'))
+    });
+</script>
+<script src="./script.js"></script>
+
