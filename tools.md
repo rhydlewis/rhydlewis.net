@@ -8,7 +8,7 @@ background: '/img/bg-tools.jpg'
 
 ## Music
 
-- Text to MIDI - [Simple webapp](./text-to-midi/index.html) built using Claude Code to convert text chord progressions into MIDI ([code on GitHub](https://github.com/rhydlewis/text-to-midi))
+- Text to MIDI - [Simple webapp](/tools/text-to-midi/index.html) built using Claude Code to convert text chord progressions into MIDI ([code on GitHub](https://github.com/rhydlewis/text-to-midi))
 
 ## Productivity
 
