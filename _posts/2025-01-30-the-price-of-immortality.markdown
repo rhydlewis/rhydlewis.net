@@ -18,7 +18,7 @@ Finishing this one was interesting. The foundation - those church organ and synt
 
 <img src="/img/2025-01-29-the-price-of-immortality.png" width="500" class="img-fluid" alt="Screenshot of a Logic Pro project" loading="lazy">
 
-Actually, this has been a perfect example of Parkinson's Law in action - work expands to fill the time available. Looking back, I probably could have completed this track much sooner if I'd set myself some stricter deadlines. It's a lesson learned for future work that I'll no doubt ignore - sometimes you need those artificial constraints to push through the lure of making _just one more_ adjustment. 
+Actually, this has been a perfect example of Parkinson's Law in action - work expands to fill the time available. Looking back, I probably could have completed this track much sooner if I'd set myself some stricter deadlines. It's a lesson learned for future work that I'll no doubt ignore - sometimes you need those artificial constraints to push through the lure of making _just one more_ adjustment.
 
 To accompany the track, I used Premiere Pro to edit the scene to match the music, and I'm really happy with how it turned out. You can check it out on [YouTube](https://www.youtube.com/watch?v=7Rd5JDstMxc).
 
