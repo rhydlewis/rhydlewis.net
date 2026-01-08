@@ -12,6 +12,7 @@ background: '/img/bg-tools.jpg'
 
 ## Productivity
 
+- [Flowcus](https://getflowcus.app/) - A macOS app that visualises your OmniFocus & Reminders tasks on a single board
 - [Search OmniFocus](https://github.com/rhydlewis/alfred-search-omnifocus) - An Alfred workflow to search OmniFocus data
 - [Omnifocus to Kanban](https://github.com/rhydlewis/omnifocus-to-kanban) - A Python app that converts OmniFocus tasks into actions on a Kanban board
 
