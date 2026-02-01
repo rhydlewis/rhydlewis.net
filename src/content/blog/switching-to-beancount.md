@@ -74,7 +74,7 @@ My Fava configuration includes some options to customize the interface:
 * `"show-accounts-with-zero-balance" "false"` — hides any account with a 0 value, aids readability 
 * `"show-accounts-with-zero-transactions" "false"` — ditto
                                                        
-<img src="/img/2024-09-24-fava.png" class="w-full rounded-lg" alt="Screenshot of Fava" loading="lazy">
+![Screenshot of Fava](../../assets/images/2024-09-24-fava.png)
 
 I'm still experimenting with custom dashboards in Fava.
 

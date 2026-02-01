@@ -11,7 +11,7 @@ interface ManualSection {
 
 const sections: ManualSection[] = [
   {
-    icon: '1F393', // Graduation cap
+    icon: 'graduation-cap',
     title: 'How I Learn Best',
     items: [
       'Through practical demonstrations & hands-on practice',
@@ -21,7 +21,7 @@ const sections: ManualSection[] = [
     ],
   },
   {
-    icon: '26A0', // Warning
+    icon: 'alert-triangle',
     title: 'Things I Struggle With',
     items: [
       'Overly long/unnecessary meetings',
@@ -31,7 +31,7 @@ const sections: ManualSection[] = [
     ],
   },
   {
-    icon: '2764', // Heart
+    icon: 'heart',
     title: 'Things I Love',
     items: [
       'Tackling novel and challenging problems',
@@ -45,15 +45,18 @@ const sections: ManualSection[] = [
     ],
   },
   {
-    icon: '1F464', // Person silhouette
+    icon: 'user',
     title: 'Other Things to Know About Me',
     items: [
       'I sometimes play guitar whilst thinking through a problem - it helps me focus',
       'I create and release original music under the alias "entMOOT". Feel free to ask me about it if you\'re interested in the odd combination of movie dialogue, guitars and electronic music.',
+      'Prefer quiet workspaces',
+      'Can work effectively in busy environments with headphones',
+      'I value focused & uninterrupted time for deep work',
     ],
   },
   {
-    icon: '1F3AF', // Target
+    icon: 'target',
     title: 'Things I Need',
     items: [
       'Independent thinking time before collaboration',
@@ -65,7 +68,7 @@ const sections: ManualSection[] = [
     ],
   },
   {
-    icon: '1F4AC', // Speech bubble
+    icon: 'message-circle',
     title: 'How I Best Receive Feedback',
     items: [
       'Direct, immediate delivery & honest/candid',
@@ -75,7 +78,7 @@ const sections: ManualSection[] = [
     ],
   },
   {
-    icon: '1F4F1', // Mobile phone
+    icon: 'smartphone',
     title: 'Best Ways to Communicate with Me',
     items: [
       'Via Slack - you can normally expect a response within minutes during work hours',
@@ -86,7 +89,7 @@ const sections: ManualSection[] = [
     ],
   },
   {
-    icon: '23F0', // Alarm clock
+    icon: 'clock',
     title: 'Times / Hours I Like to Work',
     items: [
       'Early starter, typically available/start at 07:00 - 07:30 especially if I\'m travelling into London',
@@ -95,20 +98,19 @@ const sections: ManualSection[] = [
       'I try to protect my time outside of work hours so a response the next business day is most likely',
     ],
   },
-  {
-    icon: '1F3E2', // Office building
-    title: 'Conditions I Like to Work in',
-    items: [
-      'Prefer quiet workspaces',
-      'Can work effectively in busy environments with headphones',
-      'I value focused & uninterrupted time for deep work',
-    ],
-  },
 ];
 
-function getEmoji(codePoint: string): string {
-  return String.fromCodePoint(parseInt(codePoint, 16));
-}
+// Lucide icon paths (stroke-based, 24x24 viewBox)
+const iconPaths: Record<string, string> = {
+  'graduation-cap': 'M22 10v6M2 10l10-5 10 5-10 5z M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5',
+  'alert-triangle': 'm21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3 M12 9v4 M12 17h.01',
+  'heart': 'M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z',
+  'user': 'M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2 M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z',
+  'target': 'M22 12h-4 M12 2v4 M2 12h4 M12 22v-4 M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z',
+  'message-circle': 'M7.9 20A9 9 0 1 0 4 16.1L2 22Z',
+  'smartphone': 'M6 3h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z M12 18h.01',
+  'clock': 'M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z M12 6v6l4 2',
+};
 ---
 
 <BaseLayout title="Manual of Me" description="A guide to working with me effectively.">
@@ -126,8 +128,22 @@ function getEmoji(codePoint: string): string {
       <div class="grid gap-6 sm:grid-cols-2">
         {sections.map((section) => (
           <div class="rounded-2xl border border-border bg-muted p-6 dark:border-border-dark dark:bg-muted-dark">
-            <div class="mb-4 text-3xl">{getEmoji(section.icon)}</div>
-            <h2 class="font-heading text-lg font-semibold mb-4">{section.title}</h2>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="text-accent dark:text-accent-dark shrink-0">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d={iconPaths[section.icon]} />
+                </svg>
+              </div>
+              <h2 class="font-heading text-lg font-semibold">{section.title}</h2>
+            </div>
             <ul class="space-y-2">
               {section.items.map((item) => (
                 <li class="text-sm text-text-muted dark:text-text-dark-muted flex items-start gap-2">

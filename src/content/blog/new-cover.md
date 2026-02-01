@@ -19,4 +19,4 @@ The Logic Pro project ended up quite large - nearly a gig - so I think I've prob
 2. Listening to your own voice played back repeatedly takes patience
 3. Delay as an effect needs some TLC when thrown in
 
-<img src="/img/2024-04-30-fml-logic-pro.jpg" class="w-full rounded-lg" alt="Screenshot of Logic Pro" loading="lazy">
+![Screenshot of Logic Pro](../../assets/images/2024-04-30-fml-logic-pro.jpg)

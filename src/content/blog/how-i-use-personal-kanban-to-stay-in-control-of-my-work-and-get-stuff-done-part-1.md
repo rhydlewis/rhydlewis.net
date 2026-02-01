@@ -58,12 +58,12 @@ _2) What's my initial workflow?_
 
 The example workflow:
 
-<img src="/img/1437975339651-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1437975339651-img.png)
 
 helps to explain the theory but doesn't represent how I get things done. I
 added 2 extra columns to help:
 
-<img src="/img/1437975359115-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1437975359115-img.png)
 
   * _Backlog_: a repository of everything I need to do. This is a holding area to prevent me filling the _To Do_ column with too many tasks.
   * _Waiting for_: stuff that I need other people to complete before I can make the next step.

@@ -11,31 +11,31 @@ Seeing the rendered text side-by-side is often useful too. I've created this Alf
 
 To use it, I open Alfred (`⌘-Space`) and type `pmd`.
   
-<img src="/img/1453931842312-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy"> 
+![TBC](../../assets/images/1453931842312-img.png) 
 
 then type a query to find the file I want to see:
 
-<img src="/img/1453931858776-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1453931858776-img.png)
 
 Which means I can do split my screen and see my changes as I make them:
   
-<img src="/img/1453931901607-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1453931901607-img.png)
 
 Here's a step-by-step guide on how to create this workflow:
 
 * Open Alfred Preferences and create a new workflow
 * Add a <em>File Filter</em> input with set the keyword as `pmd`
   
-<img src="/img/1453931977377-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1453931977377-img.png)
   
 * From the Finder, drag a Markdown file into the File Types box to ensure Alfred only shows Markdown files in the results
   
-<img src="/img/1453932022090-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1453932022090-img.png)
 
 * Add an <em>Open File</em> action and drag in Marked.app (or whatever app you want to use) from the `Applications` folder
   
-<img src="/img/1453932051258-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1453932051258-img.png)
 
 Link the input to the action and you're done!
   
-<img src="/img/1453932095916-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1453932095916-img.png)

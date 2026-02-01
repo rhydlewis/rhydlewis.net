@@ -14,6 +14,6 @@ date: 2014-01-27
 
 <p>After checking all notes I expected to see was were in nvAlt, I deleted the Evernote clients from my phone, iPad &amp; Mac and then deactivated my account. </p>
 
-<img src="/img/Screen+Shot+2014-01-27+at+19.39.25.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/Screen+Shot+2014-01-27+at+19.39.25.png)
 
 <p>Onwards and upwards I say.</p>

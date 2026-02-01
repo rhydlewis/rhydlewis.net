@@ -33,11 +33,11 @@ tags:
 
 <p>What does this mean? Well, if you have this:</p>
   
-<img src="/img/inbox.png" class="w-full rounded-lg" alt="TBC" loading="lazy">  
+![TBC](../../assets/images/inbox.png)  
 
 <p>then you get to see this:</p>
   
-<img src="/img/pk.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/pk.png)
   
 
 <p>Flagging tasks to see them on a board is a stop gap but it works for now. Syncing inbox items to the board is also debatable but, again, it's ok for now. In fact, I'm partway towards my goal. I can:</p>

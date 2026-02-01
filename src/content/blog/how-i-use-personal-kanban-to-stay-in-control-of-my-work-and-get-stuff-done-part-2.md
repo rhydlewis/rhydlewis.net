@@ -50,7 +50,7 @@ stay-in-control-of-my-work-and-get-stuff-done-part-1) explains this). After
 some iteration my process works well. The picture below shows an example of my
 board:
 
-<img src="/img/1443525004235-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1443525004235-img.png)
 
 I move work I want to finish today but can't until later out of the _Backlog_
 into these columns:

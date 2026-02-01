@@ -30,7 +30,7 @@ date: 2014-08-14
 
 <p>Move all menu bar icons into Bartender's menu (except Skype, 1Password, Airport, Battery, Clock and Spotlight).</p>
 
-<img src="/img/Screenshot+2014-08-12+18.17.10.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/Screenshot+2014-08-12+18.17.10.png)
   
 
 <h2 id="commandlinejiggerypokery">Command line jiggery pokery</h2>
@@ -99,11 +99,11 @@ date: 2014-08-14
 
 <p>Setup <a href="http://iterm2.com">iTerm2</a> so that it appears at the top of the screen at the drop of a hat (well, pressing ⌘-§).</p>
   
-<img src="/img/Screenshot+2014-08-12+18.16.29.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/Screenshot+2014-08-12+18.16.29.png)
   
-<img src="/img/1407913423715-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1407913423715-img.png)
   
-<img src="/img/1407996423315-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1407996423315-img.png)
   
 
 <h2 id="mail">Mail</h2>
@@ -128,7 +128,7 @@ date: 2014-08-14
 <li>All others (see below) work - hooray!</li></ul></li>
 </ul>
   
-<img src="/img/1407996475262-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1407996475262-img.png)
 
 <h2 id="miscellaneousstuff">Miscellaneous stuff</h2>
 
@@ -141,4 +141,4 @@ date: 2014-08-14
 <li>⌘-3 finger swipe right - move current window to right hand side of screen</li></ul></li>
 </ul>
   
-<img src="/img/1407996520549-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1407996520549-img.png)

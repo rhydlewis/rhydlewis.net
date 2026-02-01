@@ -36,7 +36,7 @@ item a context of _@Email_ or _@Computer_ was no longer a useful distinction.
 I wanted to know - at a glance - what was important and what wasn't. I
 redefined my contexts as:
 
-<img src="/img/1453453409396-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1453453409396-img.png)
 
   * _@Important_: actions I want to focus on
   * _@Work_: actions I have do for work (probably important as well but only because I have to do it as opposed to me wanting to do it)
@@ -75,7 +75,7 @@ layout, created a new board based on this and made these changes:
   * added a 'Reading' to help track books in progress
   * removed the 'Train Home' lane (I wasn't using it as much as I thought)
   * updated the WIP limits
-<img src="/img/1453453628228-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1453453628228-img.png)
 
 **Results**
 

@@ -35,4 +35,4 @@ of date version).
   * Dean Jackson's [Python library for Alfred workflows](https://github.com/deanishe/alfred-workflow) does most of the heavy lifting. Excellent stuff, thank you.
   * Marko Kaestner's [more in-depth workflow](https://github.com/markokaestner/of-task-actions) provided some insight into how to search Omnifocus.
   * There is [1 outstanding issue](https://github.com/rhydlewis/search-omnifocus/issues/1) with this workflow: 1 character queries aren't invoked by Alfred and can result in stale python processes. I'm looking into it.
-<img src="/img/1432917782115-img.png" class="w-full rounded-lg" alt="TBC" loading="lazy">
+![TBC](../../assets/images/1432917782115-img.png)

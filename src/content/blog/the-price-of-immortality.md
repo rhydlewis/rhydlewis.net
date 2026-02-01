@@ -9,11 +9,11 @@ tags:
 
 Speaking of time (and immortality), I'm slightly surprised to realize I started this [back in May 2024](https://rhydlewis.net/blog/2024/05/08/wip-entmoot-song) 😱. The track features a rich blend of church organ, drums, synths and heavy guitars, creating a... _looks away from the screen to contemplate using a slightly grandiose term_... soundscape that I really enjoyed creating.
 
-<img src="/img/2025-01-29-logic.png" class="w-full rounded-lg" alt="Screenshot of a Logic Pro project" loading="lazy">
+![Screenshot of a Logic Pro project](../../assets/images/2025-01-29-logic.png)
 
 Finishing this one was interesting. The foundation - those church organ and synth layers - came together relatively quickly. But then I fell into that familiar trap: either endlessly tweaking guitar tones ("maybe if I just try _this_ pedal and change _that_ setting...") or avoiding it entirely by working on other tracks. Both paths, as it turns out, are equally effective at preventing completion.
 
-<img src="/img/2025-01-29-the-price-of-immortality.png" width="500" class="w-full rounded-lg" alt="Screenshot of a Logic Pro project" loading="lazy">
+![Screenshot of a Logic Pro project](../../assets/images/2025-01-29-the-price-of-immortality.png)
 
 Actually, this has been a perfect example of Parkinson's Law in action - work expands to fill the time available. Looking back, I probably could have completed this track much sooner if I'd set myself some stricter deadlines. It's a lesson learned for future work that I'll no doubt ignore - sometimes you need those artificial constraints to push through the lure of making _just one more_ adjustment.
 

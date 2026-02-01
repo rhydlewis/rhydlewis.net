@@ -9,7 +9,7 @@ What the blazes is this? Notes for the week at the start of the week? That's pre
 
 Some classic procrastination last week as I avoided finishing 1 entMOOT song in preference of starting another. Classic. I was hooning about with a chord progression and found the sound of it worked well with a Super Saw pad. A few hours later and I had the workings of an outline. A few more hours and I'm happy with the initial results. Another few passes and it'll be ready for a mix. 
 
-<img src="/img/2024-07-29%20-%20logic.png" class="w-full rounded-lg" alt="Screenshot of Logic Pro" loading="lazy">
+![Screenshot of Logic Pro](../../assets/images/2024-07-29%20-%20logic.png)
 
 Slow going on the running front. I ran a half marathon at the start of July (2h 6m - slower than I wanted but the wind was mental and I had a bit of jip with the right knee). I'll re-run the same event in November so it'll be time to start a new training plan soon.
 

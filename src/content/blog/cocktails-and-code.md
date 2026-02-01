@@ -8,7 +8,7 @@ tags:
 You may or may not be aware of the 1988 film [Cocktail](https://en.wikipedia.org/wiki/Cocktail_(1988_film)) starring _Tom Cruise_, _Elizabeth Shue_ and _Bryan Brown_. Billed as a romantic comedy-drama, it tells the story of a "business student who takes up bartending in order to make ends meet".
 
 <figure>
-    <img src="/img/2024-07-16-cocktail-poster.jpg" class="img-fluid mx-auto d-block" alt="Cocktail movie poster (1988)" loading="lazy" width="33%">
+    ![Cocktail movie poster (1988)](../../assets/images/2024-07-16-cocktail-poster.jpg)
     <figcaption>Trendy bartender Brian Flanagan just before making a cocktail whilst also singing "Addicted to Love" to a packed out bar somewhere in New York</figcaption>
 </figure>
 
@@ -25,7 +25,7 @@ However, after I watched it on VHS in the early 1990s, I was definitely not in t
 While not particularly profound, Coughlin's Law serves its purpose in the film. However, what truly captured my attention—for reasons I still can't fully explain—was Bryan Brown's distinctive Australian baritone as he intoned the phrase 'Coughlin's Law'.
 
 <figure>
-  <img src="/img/2024-07-16-cocktail-sticker.jpg" class="img-fluid mx-auto d-block" alt="Picture of a sticker showing Doug Coughlin from Cocktail with the text &quot;Anything else is always something better&quot;" loading="lazy" width="50%">    <figcaption>An actual sticker you can <a href="https://www.redbubble.com/i/sticker/COCKTAIL-Coughlin-s-Law-Anything-else-is-always-something-better-by-SynthOverlord/94046648.EJUG5">actually buy</a></figcaption>
+  ![Picture of a sticker showing Doug Coughlin from Cocktail with the text &quot;Anything else is always something better&quot;](../../assets/images/2024-07-16-cocktail-sticker.jpg)    <figcaption>An actual sticker you can <a href="https://www.redbubble.com/i/sticker/COCKTAIL-Coughlin-s-Law-Anything-else-is-always-something-better-by-SynthOverlord/94046648.EJUG5">actually buy</a></figcaption>
 </figure>
 
 Whenever I hear anyone reference a law that relates to the [type of work I do](https://www.equalexperts.com) (I'm talking your _Conway's_, your _Parkinson's_ and your _Brooks'_\*), I can't help but think about Doug Coughlin (RIP, sorry spoiler alert) schooling earnest Brian Flanagan in how to make an Amaretto Sour.

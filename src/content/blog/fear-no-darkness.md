@@ -7,7 +7,7 @@ tags:
 
 After six months of sitting _almost_ completed on my hard drive, "Fear No Darkness" is finally out. This new [entMOOT](https://entmootmusic.com) track rescores an iconic scenes from "The Lord of the Rings: The Return of the King" and I think it might just be my favourite work so far.
 
-<img src="/img/2025-10-20-fear no darkness.jpg" class="w-full rounded-lg" alt="Cover for entMOOT's 'Fear No Darkness' single showing the title in large white stylized text with a picture of a mountain scene and the entMOOT logo at the bottom" loading="lazy">
+![Cover for entMOOT's 'Fear No Darkness' single showing the title in large white stylized text with a picture of a mountain scene and the entMOOT logo at the bottom](../../assets/images/2025-10-20-fear no darkness.jpg)
 
 ## About the Track
 

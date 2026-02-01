@@ -1,33 +1,28 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const companies = [
-  { name: 'Equal Experts', logo: '/img/logo_equalexperts.png' },
-  { name: '11:FS Foundry', logo: '/img/logo_11fs.png' },
-  { name: 'HMRC', logo: '/img/logo_hmrc.png' },
-  { name: 'Barclays', logo: '/img/logo_barclays.png' },
-  { name: 'FlexTrade', logo: '/img/logo_flextrade.png' },
-  { name: 'Home Office', logo: '/img/logo_homeoffice.png' },
-  { name: 'MergerMarket', logo: '/img/logo_mergermarket.png' },
-  { name: 'Telefonica', logo: '/img/logo_telefonica.png' },
-];
-
-const musicLinks = {
-  rhydLewis: {
-    spotify: 'https://open.spotify.com/artist/4pIyMWReoHoNybLHAbzOGK',
-    apple: 'https://music.apple.com/gb/artist/rhyd-lewis/1716733982',
-  },
-  entmoot: {
-    spotify: 'https://open.spotify.com/artist/6HdybP67Hqp9kLsZeXvdgY',
-    apple: 'https://music.apple.com/gb/artist/entmoot/1669105995',
-  },
-};
+// Import images
+import podcastImg from '../assets/images/podcast.png';
+import logoEqualExperts from '../assets/images/logo_equalexperts.png';
+import logo11fs from '../assets/images/logo_11fs.png';
+import logoHmrc from '../assets/images/logo_hmrc.png';
+import logoBarclays from '../assets/images/logo_barclays.png';
+import logoFlextrade from '../assets/images/logo_flextrade.png';
+import logoHomeoffice from '../assets/images/logo_homeoffice.png';
+import logoMergermarket from '../assets/images/logo_mergermarket.png';
+import logoTelefonica from '../assets/images/logo_telefonica.png';
 
 const podcastLinks = {
   spotify: 'https://open.spotify.com/show/4UACxKSbtgRbSg5KfFy621',
   apple: 'https://podcasts.apple.com/gb/podcast/rethinking-work-life-with-rhyd-lewis/id1652090407',
+};
+
+const musicLinks = {
+  rhydLewis: { spotify: 'https://open.spotify.com/artist/4pIyMWReoHoNybLHAbzOGK' },
+  entmoot: { spotify: 'https://open.spotify.com/artist/6HdybP67Hqp9kLsZeXvdgY' },
 };
 ---
 
@@ -61,7 +56,7 @@ const podcastLinks = {
         <p>
           I also maintain the moderately popular productivity
           <a href="https://alfred.app/" target="_blank" rel="noopener noreferrer">Alfred.app</a> workflow,
-          <a href="https://github.com/rhydlewis/alfred-search-omnifocus" target="_blank" rel="noopener noreferrer">"Search OmniFocus"</a>
+          <a href="https://github.com/rhydlewis/omnifocus-search" target="_blank" rel="noopener noreferrer">"OmniFocus Search"</a>
           which helps people quickly find and access their
           <a href="https://www.omnigroup.com/omnifocus/" target="_blank" rel="noopener noreferrer">OmniFocus</a> information.
         </p>
@@ -69,79 +64,17 @@ const podcastLinks = {
 
       <!-- Music Section -->
       <section class="mt-16">
-        <h2 class="font-heading text-2xl font-semibold mb-8">Music</h2>
-
-        <div class="grid gap-6 sm:grid-cols-2">
-          <!-- Rhyd Lewis Music -->
-          <div class="rounded-2xl border border-border bg-muted p-6 dark:border-border-dark dark:bg-muted-dark">
-            <div class="flex items-center gap-4 mb-4">
-              <img
-                src="/img/rhydlewis.jpg"
-                alt="Rhyd Lewis"
-                class="w-16 h-16 rounded-full object-cover"
-              />
-              <div>
-                <h3 class="font-heading font-semibold">Rhyd Lewis</h3>
-                <p class="text-sm text-text-muted dark:text-text-dark-muted">
-                  Cover & original songs
-                </p>
-              </div>
-            </div>
-            <div class="flex gap-3">
-              <a
-                href={musicLinks.rhydLewis.spotify}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 rounded-full bg-[#1DB954] px-3 py-1.5 text-sm font-medium text-white hover:opacity-90"
-              >
-                Spotify
-              </a>
-              <a
-                href={musicLinks.rhydLewis.apple}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#fc3c44] to-[#fa233b] px-3 py-1.5 text-sm font-medium text-white hover:opacity-90"
-              >
-                Apple Music
-              </a>
-            </div>
-          </div>
-
-          <!-- entMOOT Music -->
-          <div class="rounded-2xl border border-border bg-muted p-6 dark:border-border-dark dark:bg-muted-dark">
-            <div class="flex items-center gap-4 mb-4">
-              <img
-                src="/img/entmoot.png"
-                alt="entMOOT"
-                class="w-16 h-16 rounded-full object-cover"
-              />
-              <div>
-                <h3 class="font-heading font-semibold">entMOOT</h3>
-                <p class="text-sm text-text-muted dark:text-text-dark-muted">
-                  Synths, guitars & movie dialogue
-                </p>
-              </div>
-            </div>
-            <div class="flex gap-3">
-              <a
-                href={musicLinks.entmoot.spotify}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 rounded-full bg-[#1DB954] px-3 py-1.5 text-sm font-medium text-white hover:opacity-90"
-              >
-                Spotify
-              </a>
-              <a
-                href={musicLinks.entmoot.apple}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#fc3c44] to-[#fa233b] px-3 py-1.5 text-sm font-medium text-white hover:opacity-90"
-              >
-                Apple Music
-              </a>
-            </div>
-          </div>
-        </div>
+        <h2 class="font-heading text-2xl font-semibold mb-4">Music</h2>
+        <p class="text-text-muted dark:text-text-dark-muted mb-4">
+          I release original guitar compositions as <strong class="text-text dark:text-text-dark">Rhyd Lewis</strong> and
+          experimental electronic music blending synths and movie dialogue as <strong class="text-text dark:text-text-dark">entMOOT</strong>.
+        </p>
+        <a href="/music" class="inline-flex items-center gap-2 text-accent hover:text-accent-hover dark:text-accent-dark dark:hover:text-accent-dark-hover font-medium">
+          Listen to my music
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
       </section>
 
       <!-- Podcast Section -->
@@ -150,9 +83,11 @@ const podcastLinks = {
 
         <div class="rounded-2xl border border-border bg-muted p-6 dark:border-border-dark dark:bg-muted-dark">
           <div class="flex items-center gap-4 mb-4">
-            <img
-              src="/img/podcast.png"
+            <Image
+              src={podcastImg}
               alt="Rethinking Work & Life"
+              width={64}
+              height={64}
               class="w-16 h-16 rounded-lg object-cover"
             />
             <div>
@@ -194,22 +129,6 @@ const podcastLinks = {
           <p>
             I apply lean, agile, and systems thinking principles to solve complex problems. I'm pragmatic, down-to-earth and focus on communication, clarity on 'why' and ensuring everyone feels valued and enjoys working together.
           </p>
-        </div>
-
-        <h3 class="font-heading text-lg font-semibold mb-6 text-text-muted dark:text-text-dark-muted">
-          Companies I've helped
-        </h3>
-
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
-          {companies.map((company) => (
-            <div class="flex items-center justify-center p-4 rounded-lg bg-white dark:bg-muted-dark">
-              <img
-                src={company.logo}
-                alt={company.name}
-                class="max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 dark:invert dark:opacity-50 dark:hover:opacity-80"
-              />
-            </div>
-          ))}
         </div>
       </section>
     </div>

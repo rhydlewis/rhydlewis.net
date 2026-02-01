@@ -7,7 +7,7 @@ tags:
 
 Neeeeeeeeew release time: it's an [entMOOT](https://entmootmusic.com) single — "I Never Wanted This For You" — and it's available now for purchase and on all major streaming platforms.
 
-<img src="/img/2025-03-03-never-wanted.png" class="w-full rounded-lg" alt="Cover for entMOOT's 'I Never Wanted This For You' single showing the title in large white stylized text with a textured blue-gray background and the entMOOT logo at the bottom" loading="lazy">
+![Cover for entMOOT's 'I Never Wanted This For You' single showing the title in large white stylized text with a textured blue-gray background and the entMOOT logo at the bottom](../../assets/images/2025-03-03-never-wanted.png)
 
 ## About the Track
 

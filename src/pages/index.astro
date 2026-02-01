@@ -1,9 +1,12 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import BentoCard from '../components/BentoCard.astro';
 import { getCollection } from 'astro:content';
+
+import heroImage from '../assets/images/rhyd-guitar.jpg';
 
 // Get the latest blog post
 const posts = await getCollection('blog');
@@ -32,22 +35,30 @@ function formatDate(date: Date): string {
 
         <!-- Hero Card - Main intro -->
         <BentoCard class="sm:col-span-2 lg:row-span-2" span={2}>
-          <div class="flex h-full flex-col justify-between">
-            <div>
-              <h1 class="font-heading text-display mb-4">
-                Rhyd Lewis
-              </h1>
-              <p class="text-subtitle max-w-md">
-                Software delivery consultant & guitar dabbler based in Whitstable, UK.
-              </p>
+          <div class="flex h-full flex-col lg:flex-row lg:items-center lg:gap-8">
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h1 class="font-heading text-display mb-4">
+                  Rhyd Lewis
+                </h1>
+                <p class="text-subtitle max-w-md">
+                  Software delivery consultant & guitar dabbler based in Whitstable, UK.
+                </p>
+              </div>
+              <div class="mt-8 flex flex-wrap gap-3">
+                <a href="/about" class="btn btn-primary">
+                  About
+                </a>
+              </div>
             </div>
-            <div class="mt-8 flex flex-wrap gap-3">
-              <a href="/about" class="btn btn-primary">
-                About me
-              </a>
-              <a href="/manual" class="btn btn-ghost">
-                How to work with me
-              </a>
+            <div class="hidden lg:block flex-shrink-0">
+              <Image
+                src={heroImage}
+                alt="Rhyd Lewis playing guitar"
+                width={280}
+                height={280}
+                class="rounded-2xl object-cover w-[280px] h-[280px]"
+              />
             </div>
           </div>
         </BentoCard>
@@ -90,21 +101,21 @@ function formatDate(date: Date): string {
           </BentoCard>
         )}
 
-        <!-- Now Card -->
-        <BentoCard href="/now">
+        <!-- Writing/Archive Card -->
+        <BentoCard href="/writing">
           <div class="flex h-full flex-col">
             <span class="text-xs font-medium uppercase tracking-wider text-text-muted dark:text-text-dark-muted">
-              Now
+              Writing
             </span>
             <h2 class="mt-3 font-heading text-lg font-semibold">
-              What I'm up to
+              {posts.length}+ Articles
             </h2>
             <p class="mt-2 text-sm text-text-muted dark:text-text-dark-muted">
-              Current focus, projects, and life updates.
+              On productivity, software, and music.
             </p>
             <div class="mt-auto pt-4">
               <span class="text-sm font-medium text-accent dark:text-accent-dark">
-                See now <span class="bento-arrow">&rarr;</span>
+                Browse archive <span class="bento-arrow">&rarr;</span>
               </span>
             </div>
           </div>
@@ -122,7 +133,7 @@ function formatDate(date: Date): string {
             <p class="mt-2 text-text-muted dark:text-text-dark-muted">
               Original compositions blending synths, guitars, drums and movie dialogue.
             </p>
-            <div class="mt-auto flex flex-wrap gap-3 pt-6">
+            <div class="mt-auto flex flex-wrap items-center gap-3 pt-6">
               <a
                 href="https://open.spotify.com/artist/6HdybP67Hqp9kLsZeXvdgY"
                 target="_blank"
@@ -145,26 +156,23 @@ function formatDate(date: Date): string {
                 </svg>
                 Apple Music
               </a>
-            </div>
-          </div>
-        </BentoCard>
-
-        <!-- Writing/Archive Card -->
-        <BentoCard href="/writing">
-          <div class="flex h-full flex-col">
-            <span class="text-xs font-medium uppercase tracking-wider text-text-muted dark:text-text-dark-muted">
-              Writing
-            </span>
-            <h2 class="mt-3 font-heading text-lg font-semibold">
-              {posts.length}+ Articles
-            </h2>
-            <p class="mt-2 text-sm text-text-muted dark:text-text-dark-muted">
-              On productivity, software, and music.
-            </p>
-            <div class="mt-auto pt-4">
-              <span class="text-sm font-medium text-accent dark:text-accent-dark">
-                Browse archive <span class="bento-arrow">&rarr;</span>
-              </span>
+              <a
+                href="https://entmootmusic.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-text transition-colors hover:bg-muted dark:border-border-dark dark:bg-surface-dark dark:text-text-dark dark:hover:bg-muted-dark"
+              >
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>
+                Website
+              </a>
+              <a
+                href="/music"
+                class="inline-flex items-center gap-1 text-sm font-medium text-accent hover:text-accent-hover dark:text-accent-dark dark:hover:text-accent-dark-hover"
+              >
+                More music <span class="bento-arrow">&rarr;</span>
+              </a>
             </div>
           </div>
         </BentoCard>
@@ -184,26 +192,6 @@ function formatDate(date: Date): string {
             <div class="mt-auto pt-4">
               <span class="text-sm font-medium text-accent dark:text-accent-dark">
                 View tools <span class="bento-arrow">&rarr;</span>
-              </span>
-            </div>
-          </div>
-        </BentoCard>
-
-        <!-- Manual Card -->
-        <BentoCard href="/manual">
-          <div class="flex h-full flex-col">
-            <span class="text-xs font-medium uppercase tracking-wider text-text-muted dark:text-text-dark-muted">
-              Manual
-            </span>
-            <h2 class="mt-3 font-heading text-lg font-semibold">
-              How to Work With Me
-            </h2>
-            <p class="mt-2 text-sm text-text-muted dark:text-text-dark-muted">
-              Communication preferences and working style.
-            </p>
-            <div class="mt-auto pt-4">
-              <span class="text-sm font-medium text-accent dark:text-accent-dark">
-                Read manual <span class="bento-arrow">&rarr;</span>
               </span>
             </div>
           </div>
