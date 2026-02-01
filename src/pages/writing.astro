@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+
+// Sort posts by date (newest first)
+const sortedPosts = posts.sort(
+  (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
+);
+
+// Group posts by year
+const postsByYear = sortedPosts.reduce((acc, post) => {
+  const year = new Date(post.data.date).getFullYear();
+  if (!acc[year]) {
+    acc[year] = [];
+  }
+  acc[year].push(post);
+  return acc;
+}, {} as Record<number, typeof sortedPosts>);
+
+// Get years in descending order
+const years = Object.keys(postsByYear)
+  .map(Number)
+  .sort((a, b) => b - a);
+
+// Format date helper
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('en-GB', {
+    day: 'numeric',
+    month: 'short',
+  }).format(date);
+}
+---
+
+<BaseLayout title="Writing" description="Articles on productivity, software delivery, and music.">
+  <Header />
+
+  <main class="flex-1">
+    <div class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+      <header class="mb-12">
+        <h1 class="font-heading text-display mb-4">Writing</h1>
+        <p class="text-subtitle">
+          {sortedPosts.length} articles on productivity, software, and music.
+        </p>
+      </header>
+
+      <div class="space-y-12">
+        {years.map((year) => (
+          <section>
+            <h2 class="font-heading text-xl font-semibold mb-6 text-text-muted dark:text-text-dark-muted">
+              {year}
+            </h2>
+            <ul class="space-y-4">
+              {postsByYear[year].map((post) => (
+                <li>
+                  <a
+                    href={`/blog/${post.slug}`}
+                    class="group flex items-baseline gap-4"
+                  >
+                    <time
+                      datetime={post.data.date.toISOString()}
+                      class="shrink-0 w-16 text-sm text-text-muted dark:text-text-dark-muted tabular-nums"
+                    >
+                      {formatDate(new Date(post.data.date))}
+                    </time>
+                    <span class="font-medium text-text group-hover:text-accent dark:text-text-dark dark:group-hover:text-accent-dark transition-colors">
+                      {post.data.title}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>

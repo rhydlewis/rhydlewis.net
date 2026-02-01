@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+
+  // Get all unique tags
+  const tags = new Set<string>();
+  for (const post of posts) {
+    const postTags = post.data.tags || [];
+    for (const tag of postTags) {
+      tags.add(tag);
+    }
+  }
+
+  // Create a path for each tag
+  return Array.from(tags).map((tag) => ({
+    params: { tag },
+    props: {
+      tag,
+      posts: posts
+        .filter((post) => post.data.tags?.includes(tag))
+        .sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()),
+    },
+  }));
+}
+
+interface Props {
+  tag: string;
+  posts: Awaited<ReturnType<typeof getCollection<'blog'>>>;
+}
+
+const { tag, posts } = Astro.props;
+
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  }).format(date);
+}
+---
+
+<BaseLayout title={`Posts tagged "${tag}"`} description={`All posts tagged with "${tag}".`}>
+  <Header />
+
+  <main class="flex-1">
+    <div class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+      <header class="mb-12">
+        <a
+          href="/tags"
+          class="inline-flex items-center gap-2 text-sm font-medium text-text-muted hover:text-accent dark:text-text-dark-muted dark:hover:text-accent-dark mb-4"
+        >
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+          </svg>
+          All tags
+        </a>
+        <h1 class="font-heading text-display mb-4">
+          <span class="text-text-muted dark:text-text-dark-muted">#</span>{tag}
+        </h1>
+        <p class="text-subtitle">
+          {posts.length} {posts.length === 1 ? 'post' : 'posts'}
+        </p>
+      </header>
+
+      <ul class="space-y-4">
+        {posts.map((post) => (
+          <li>
+            <a
+              href={`/blog/${post.slug}`}
+              class="group flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4"
+            >
+              <time
+                datetime={post.data.date.toISOString()}
+                class="shrink-0 text-sm text-text-muted dark:text-text-dark-muted tabular-nums"
+              >
+                {formatDate(new Date(post.data.date))}
+              </time>
+              <span class="font-medium text-text group-hover:text-accent dark:text-text-dark dark:group-hover:text-accent-dark transition-colors">
+                {post.data.title}
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>

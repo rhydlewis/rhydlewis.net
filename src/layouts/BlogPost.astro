@@ -1,0 +1,155 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  date: Date;
+  description?: string;
+  tags?: string[];
+}
+
+const { title, date, description, tags = [] } = Astro.props;
+
+// Format date
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('en-GB', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  }).format(date);
+}
+
+// Calculate reading time (rough estimate: 200 words per minute)
+const content = await Astro.slots.render('default');
+const wordCount = content.split(/\s+/).length;
+const readingTime = Math.ceil(wordCount / 200);
+---
+
+<BaseLayout title={title} description={description}>
+  <Header />
+
+  <main class="flex-1">
+    <article class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+      <!-- Article Header -->
+      <header class="mb-10">
+        <div class="mb-4 flex flex-wrap items-center gap-3 text-sm text-text-muted dark:text-text-dark-muted">
+          <time datetime={date.toISOString()}>
+            {formatDate(date)}
+          </time>
+          <span>&middot;</span>
+          <span>{readingTime} min read</span>
+        </div>
+
+        <h1 class="font-heading text-title mb-4">
+          {title}
+        </h1>
+
+        {description && (
+          <p class="text-subtitle">
+            {description}
+          </p>
+        )}
+
+        {tags.length > 0 && (
+          <div class="mt-6 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <a href={`/tags/${tag}`} class="tag">
+                {tag}
+              </a>
+            ))}
+          </div>
+        )}
+      </header>
+
+      <!-- Article Content -->
+      <div class="prose prose-lg dark:prose-dark max-w-none">
+        <slot />
+      </div>
+
+      <!-- Article Footer -->
+      <footer class="mt-12 border-t border-border pt-8 dark:border-border-dark">
+        <a
+          href="/writing"
+          class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-hover dark:text-accent-dark dark:hover:text-accent-dark-hover"
+        >
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+          </svg>
+          Back to all posts
+        </a>
+      </footer>
+    </article>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style is:global>
+  /* Prose styling for blog content */
+  .prose {
+    @apply text-text dark:text-text-dark;
+  }
+
+  .prose h2 {
+    @apply font-heading text-2xl font-semibold mt-10 mb-4 text-text dark:text-text-dark;
+  }
+
+  .prose h3 {
+    @apply font-heading text-xl font-semibold mt-8 mb-3 text-text dark:text-text-dark;
+  }
+
+  .prose p {
+    @apply mb-5 leading-relaxed;
+  }
+
+  .prose a {
+    @apply text-accent underline underline-offset-2 hover:text-accent-hover dark:text-accent-dark dark:hover:text-accent-dark-hover;
+  }
+
+  .prose ul, .prose ol {
+    @apply mb-5 pl-6;
+  }
+
+  .prose ul {
+    @apply list-disc;
+  }
+
+  .prose ol {
+    @apply list-decimal;
+  }
+
+  .prose li {
+    @apply mb-2;
+  }
+
+  .prose blockquote {
+    @apply border-l-4 border-accent pl-4 italic my-6 text-text-muted dark:border-accent-dark dark:text-text-dark-muted;
+  }
+
+  .prose code {
+    @apply font-mono text-sm bg-muted px-1.5 py-0.5 rounded dark:bg-muted-dark;
+  }
+
+  .prose pre {
+    @apply bg-muted p-4 rounded-lg overflow-x-auto my-6 dark:bg-muted-dark;
+  }
+
+  .prose pre code {
+    @apply bg-transparent p-0;
+  }
+
+  .prose img {
+    @apply rounded-lg my-6 w-full;
+  }
+
+  .prose hr {
+    @apply border-border my-8 dark:border-border-dark;
+  }
+
+  .prose strong {
+    @apply font-semibold text-text dark:text-text-dark;
+  }
+</style>

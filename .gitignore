@@ -1,34 +1,41 @@
-# Vim
-*~
-*.sw[p_]
+# Astro
+dist/
+.astro/
 
-# Sublime Text & IntelliJ
-*.sublime-project
-*.sublime-workspace
-.idea/
-
-# Ruby Gem
-*.gem
-.bundle
-Gemfile.lock
-**/vendor/bundle
-.ruby-version
-
-# Node.js and NPM
-node_modules
+# Node
+node_modules/
 npm-debug.log*
 package-lock.json
-codekit-config.json
 
-# macOS
+# Build outputs
 .DS_Store
+*.log
 
-# Jekyll generated files
-.jekyll-cache
+# Environment
+.env
+.env.*
+!.env.example
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sw[p_]
+*.sublime-project
+*.sublime-workspace
+
+# Legacy Jekyll (can be removed after migration is complete)
+.jekyll-cache/
 .jekyll-metadata
-.sass-cache
-_asset_bundler_cache
-_site
-/find-tags.py
+.sass-cache/
+_site/
+Gemfile.lock
+.bundle/
+**/vendor/bundle
+.ruby-version
+*.gem
 
+# Work in progress
 wip/

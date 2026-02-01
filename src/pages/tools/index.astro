@@ -1,0 +1,139 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+interface Tool {
+  name: string;
+  description: string;
+  href: string;
+  external?: boolean;
+  category: 'music' | 'productivity';
+}
+
+const tools: Tool[] = [
+  {
+    name: 'Text to MIDI',
+    description: 'Simple webapp to convert text chord progressions into MIDI files.',
+    href: '/tools/text-to-midi',
+    category: 'music',
+  },
+  {
+    name: 'Flowcus',
+    description: 'A macOS app that visualises your OmniFocus & Reminders tasks on a single board.',
+    href: 'https://getflowcus.app/',
+    external: true,
+    category: 'productivity',
+  },
+  {
+    name: 'Search OmniFocus',
+    description: 'An Alfred workflow to search OmniFocus data quickly.',
+    href: 'https://github.com/rhydlewis/alfred-search-omnifocus',
+    external: true,
+    category: 'productivity',
+  },
+  {
+    name: 'OmniFocus to Kanban',
+    description: 'A Python app that converts OmniFocus tasks into actions on a Kanban board.',
+    href: 'https://github.com/rhydlewis/omnifocus-to-kanban',
+    external: true,
+    category: 'productivity',
+  },
+];
+
+const musicTools = tools.filter((t) => t.category === 'music');
+const productivityTools = tools.filter((t) => t.category === 'productivity');
+---
+
+<BaseLayout title="Tools" description="Tools and workflows I've created.">
+  <Header />
+
+  <main class="flex-1">
+    <div class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+      <header class="mb-12">
+        <h1 class="font-heading text-display mb-4">Tools</h1>
+        <p class="text-subtitle">
+          Tools and workflows I've created.
+        </p>
+      </header>
+
+      <!-- Music Tools -->
+      <section class="mb-12">
+        <h2 class="font-heading text-xl font-semibold mb-6 text-text-muted dark:text-text-dark-muted">
+          Music
+        </h2>
+        <div class="space-y-4">
+          {musicTools.map((tool) => (
+            <a
+              href={tool.href}
+              target={tool.external ? '_blank' : undefined}
+              rel={tool.external ? 'noopener noreferrer' : undefined}
+              class="block rounded-2xl border border-border bg-muted p-6 transition-all hover:border-accent/30 hover:shadow-lg dark:border-border-dark dark:bg-muted-dark dark:hover:border-accent-dark/30 group"
+            >
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="font-heading font-semibold mb-2 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">
+                    {tool.name}
+                    {tool.external && (
+                      <svg class="inline-block ml-1 w-4 h-4 opacity-50" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                      </svg>
+                    )}
+                  </h3>
+                  <p class="text-sm text-text-muted dark:text-text-dark-muted">
+                    {tool.description}
+                  </p>
+                </div>
+                <span class="text-accent dark:text-accent-dark shrink-0">
+                  <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <!-- Productivity Tools -->
+      <section>
+        <h2 class="font-heading text-xl font-semibold mb-6 text-text-muted dark:text-text-dark-muted">
+          Productivity
+        </h2>
+        <div class="space-y-4">
+          {productivityTools.map((tool) => (
+            <a
+              href={tool.href}
+              target={tool.external ? '_blank' : undefined}
+              rel={tool.external ? 'noopener noreferrer' : undefined}
+              class="block rounded-2xl border border-border bg-muted p-6 transition-all hover:border-accent/30 hover:shadow-lg dark:border-border-dark dark:bg-muted-dark dark:hover:border-accent-dark/30 group"
+            >
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="font-heading font-semibold mb-2 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">
+                    {tool.name}
+                    {tool.external && (
+                      <svg class="inline-block ml-1 w-4 h-4 opacity-50" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                      </svg>
+                    )}
+                  </h3>
+                  <p class="text-sm text-text-muted dark:text-text-dark-muted">
+                    {tool.description}
+                  </p>
+                </div>
+                <span class="text-accent dark:text-accent-dark shrink-0">
+                  <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>

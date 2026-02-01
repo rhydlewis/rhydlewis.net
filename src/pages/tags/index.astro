@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+
+// Get all unique tags with counts
+const tagCounts = posts.reduce((acc, post) => {
+  const tags = post.data.tags || [];
+  for (const tag of tags) {
+    acc[tag] = (acc[tag] || 0) + 1;
+  }
+  return acc;
+}, {} as Record<string, number>);
+
+// Sort tags alphabetically
+const sortedTags = Object.entries(tagCounts).sort((a, b) =>
+  a[0].localeCompare(b[0])
+);
+---
+
+<BaseLayout title="Tags" description="Browse posts by topic.">
+  <Header />
+
+  <main class="flex-1">
+    <div class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+      <header class="mb-12">
+        <h1 class="font-heading text-display mb-4">Tags</h1>
+        <p class="text-subtitle">
+          Browse {sortedTags.length} topics.
+        </p>
+      </header>
+
+      {sortedTags.length > 0 ? (
+        <div class="flex flex-wrap gap-3">
+          {sortedTags.map(([tag, count]) => (
+            <a
+              href={`/tags/${tag}`}
+              class="tag text-base"
+            >
+              {tag}
+              <span class="ml-2 text-xs opacity-60">({count})</span>
+            </a>
+          ))}
+        </div>
+      ) : (
+        <p class="text-text-muted dark:text-text-dark-muted">
+          No tags found. Posts without tags won't appear here.
+        </p>
+      )}
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>

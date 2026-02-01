@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-text antialiased;
+    @apply dark:bg-surface-dark dark:text-text-dark;
+  }
+
+  /* Better focus styles */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+    @apply dark:outline-accent-dark;
+  }
+
+  /* Selection styling */
+  ::selection {
+    @apply bg-accent/20 text-text;
+  }
+
+  .dark ::selection {
+    @apply bg-accent-dark/30 text-text-dark;
+  }
+}
+
+@layer components {
+  /* Bento grid card styles */
+  .bento-card {
+    @apply rounded-2xl border border-border bg-muted p-6 transition-all duration-300;
+    @apply hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5;
+    @apply dark:border-border-dark dark:bg-muted-dark;
+    @apply dark:hover:border-accent-dark/30 dark:hover:shadow-accent-dark/5;
+  }
+
+  .bento-card-link {
+    @apply block h-full;
+  }
+
+  .bento-card-link:hover .bento-arrow {
+    @apply translate-x-1;
+  }
+
+  .bento-arrow {
+    @apply inline-block transition-transform duration-200;
+  }
+
+  /* Tag styles */
+  .tag {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-sm font-medium;
+    @apply bg-muted text-text-muted border border-border;
+    @apply hover:border-accent/50 hover:text-accent;
+    @apply dark:bg-muted-dark dark:text-text-dark-muted dark:border-border-dark;
+    @apply dark:hover:border-accent-dark/50 dark:hover:text-accent-dark;
+    @apply transition-colors duration-200;
+  }
+
+  /* Button styles */
+  .btn {
+    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-medium transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-white hover:bg-accent-hover;
+    @apply dark:bg-accent-dark dark:hover:bg-accent-dark-hover;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent text-text hover:bg-muted;
+    @apply dark:text-text-dark dark:hover:bg-muted-dark;
+  }
+}
+
+@layer utilities {
+  /* Custom text sizes for headings */
+  .text-display {
+    @apply text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl;
+  }
+
+  .text-title {
+    @apply text-2xl font-semibold tracking-tight sm:text-3xl;
+  }
+
+  .text-subtitle {
+    @apply text-lg text-text-muted dark:text-text-dark-muted;
+  }
+
+  /* Reading width constraint */
+  .prose-width {
+    @apply max-w-[65ch];
+  }
+
+  /* Grid utilities for bento */
+  .bento-span-2 {
+    @apply col-span-1 sm:col-span-2;
+  }
+
+  .bento-span-3 {
+    @apply col-span-1 sm:col-span-2 lg:col-span-3;
+  }
+}

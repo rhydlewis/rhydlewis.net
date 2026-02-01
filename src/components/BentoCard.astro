@@ -1,0 +1,29 @@
+---
+interface Props {
+  href?: string;
+  class?: string;
+  span?: 1 | 2 | 3;
+}
+
+const { href, class: className = '', span = 1 } = Astro.props;
+
+const spanClass = {
+  1: '',
+  2: 'sm:col-span-2',
+  3: 'sm:col-span-2 lg:col-span-3',
+}[span];
+
+const Tag = href ? 'a' : 'div';
+---
+
+<Tag
+  href={href}
+  class:list={[
+    'bento-card group',
+    href && 'bento-card-link',
+    spanClass,
+    className,
+  ]}
+>
+  <slot />
+</Tag>

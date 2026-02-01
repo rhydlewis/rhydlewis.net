@@ -1,0 +1,96 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const { title, description = "Software delivery consultant & guitar dabbler", ogImage } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Primary Meta Tags -->
+    <title>{title} | Rhyd Lewis</title>
+    <meta name="title" content={`${title} | Rhyd Lewis`} />
+    <meta name="description" content={description} />
+    <meta name="author" content="Rhyd Lewis" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={`${title} | Rhyd Lewis`} />
+    <meta property="og:description" content={description} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={`${title} | Rhyd Lewis`} />
+    <meta property="twitter:description" content={description} />
+    {ogImage && <meta property="twitter:image" content={ogImage} />}
+
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Rhyd Lewis - Blog" href="/rss.xml" />
+
+    <!-- Plausible Analytics (privacy-friendly) -->
+    <!-- To enable: replace 'rhydlewis.net' with your domain after setting up at plausible.io -->
+    <script defer data-domain="rhydlewis.net" src="https://plausible.io/js/script.js"></script>
+
+    <!-- Theme detection script (runs before page renders to prevent flash) -->
+    <script is:inline>
+      const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme');
+        }
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          return 'dark';
+        }
+        return 'light';
+      })();
+
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+
+      window.localStorage.setItem('theme', theme);
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <slot />
+
+    <!-- Theme toggle script -->
+    <script>
+      function toggleTheme() {
+        const html = document.documentElement;
+        const isDark = html.classList.contains('dark');
+
+        if (isDark) {
+          html.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+        } else {
+          html.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      }
+
+      // Expose to window for button onclick
+      window.toggleTheme = toggleTheme;
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

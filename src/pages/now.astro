@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const lastUpdated = new Date('2026-02-01');
+
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('en-GB', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  }).format(date);
+}
+---
+
+<BaseLayout title="Now" description="What I'm doing right now.">
+  <Header />
+
+  <main class="flex-1">
+    <div class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+      <header class="mb-12">
+        <h1 class="font-heading text-display mb-4">Now</h1>
+        <p class="text-sm text-text-muted dark:text-text-dark-muted">
+          Last updated on {formatDate(lastUpdated)}
+        </p>
+      </header>
+
+      <div class="prose prose-lg dark:prose-dark max-w-none">
+        <h2>Right now...</h2>
+
+        <ul>
+          <li>Reading "Precipice" by Robert Harris</li>
+          <li>Editing new song with working title "Get Busy Living" by entMOOT (part of the upcoming entMOOT album 'Rescored Vol. One')</li>
+          <li>Literally about to go for an early morning run</li>
+          <li>Building a mobile RPG game</li>
+          <li>Working at <a href="https://www.equalexperts.com" target="_blank" rel="noopener noreferrer">Equal Experts</a></li>
+        </ul>
+      </div>
+
+      <footer class="mt-12 pt-8 border-t border-border dark:border-border-dark">
+        <p class="text-sm text-text-muted dark:text-text-dark-muted">
+          This page is inspired by <a href="http://sivers.org/now" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-hover dark:text-accent-dark dark:hover:text-accent-dark-hover underline underline-offset-2">Derek Siver's now page</a>.
+        </p>
+      </footer>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .prose h2 {
+    @apply font-heading text-2xl font-semibold mt-0 mb-6 text-text dark:text-text-dark;
+  }
+
+  .prose ul {
+    @apply list-disc pl-6 space-y-3;
+  }
+
+  .prose li {
+    @apply text-text dark:text-text-dark;
+  }
+
+  .prose a {
+    @apply text-accent underline underline-offset-2 hover:text-accent-hover dark:text-accent-dark dark:hover:text-accent-dark-hover;
+  }
+</style>

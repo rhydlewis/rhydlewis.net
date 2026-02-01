@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface ManualSection {
+  icon: string;
+  title: string;
+  items: string[];
+}
+
+const sections: ManualSection[] = [
+  {
+    icon: '1F393', // Graduation cap
+    title: 'How I Learn Best',
+    items: [
+      'Through practical demonstrations & hands-on practice',
+      'Direct experience with new concepts',
+      'Learning by doing rather than theoretical discussion',
+      'Exploring unfamiliar territory',
+    ],
+  },
+  {
+    icon: '26A0', // Warning
+    title: 'Things I Struggle With',
+    items: [
+      'Overly long/unnecessary meetings',
+      'Communication lacking clarity/purpose',
+      'Email-heavy communication',
+      'Meetings without agenda/purpose',
+    ],
+  },
+  {
+    icon: '2764', // Heart
+    title: 'Things I Love',
+    items: [
+      'Tackling novel and challenging problems',
+      'Running - I will sometimes need to head out to clear my head',
+      'Structured, regular check-ins',
+      'Talking to people',
+      'Independent problem-solving followed by collaboration',
+      'Connecting & helping people',
+      'Building things from scratch',
+      'Music, running and time away from work',
+    ],
+  },
+  {
+    icon: '1F464', // Person silhouette
+    title: 'Other Things to Know About Me',
+    items: [
+      'I sometimes play guitar whilst thinking through a problem - it helps me focus',
+      'I create and release original music under the alias "entMOOT". Feel free to ask me about it if you\'re interested in the odd combination of movie dialogue, guitars and electronic music.',
+    ],
+  },
+  {
+    icon: '1F3AF', // Target
+    title: 'Things I Need',
+    items: [
+      'Independent thinking time before collaboration',
+      'Regular check-ins on "big work"',
+      'Clear, efficient communication',
+      'Space to think before action',
+      'Focused meeting times with specific objectives',
+      'Time to process information independently',
+    ],
+  },
+  {
+    icon: '1F4AC', // Speech bubble
+    title: 'How I Best Receive Feedback',
+    items: [
+      'Direct, immediate delivery & honest/candid',
+      'Prefer verbal feedback, but written is acceptable',
+      'Will need time to process feedback',
+      'Appreciate straightforward approach - no need to sugar-coat',
+    ],
+  },
+  {
+    icon: '1F4F1', // Mobile phone
+    title: 'Best Ways to Communicate with Me',
+    items: [
+      'Via Slack - you can normally expect a response within minutes during work hours',
+      'Prefer focused meetings - 25-30 minutes where possible',
+      'Avoid scheduling default 1-hour meetings',
+      'For urgent matters, send a Slack message even if I appear busy. Worst case, call me.',
+      'Use plain English in an active tone ("Please review this" rather than "This needs to be reviewed")',
+    ],
+  },
+  {
+    icon: '23F0', // Alarm clock
+    title: 'Times / Hours I Like to Work',
+    items: [
+      'Early starter, typically available/start at 07:00 - 07:30 especially if I\'m travelling into London',
+      'Protected focus time between 12-2 PM (please avoid scheduling during this time)',
+      'I\'m available and responsive during normal work hours',
+      'I try to protect my time outside of work hours so a response the next business day is most likely',
+    ],
+  },
+  {
+    icon: '1F3E2', // Office building
+    title: 'Conditions I Like to Work in',
+    items: [
+      'Prefer quiet workspaces',
+      'Can work effectively in busy environments with headphones',
+      'I value focused & uninterrupted time for deep work',
+    ],
+  },
+];
+
+function getEmoji(codePoint: string): string {
+  return String.fromCodePoint(parseInt(codePoint, 16));
+}
+---
+
+<BaseLayout title="Manual of Me" description="A guide to working with me effectively.">
+  <Header />
+
+  <main class="flex-1">
+    <div class="mx-auto max-w-4xl px-4 py-12 sm:px-6 sm:py-16">
+      <header class="mb-12">
+        <h1 class="font-heading text-display mb-4">Manual of Me</h1>
+        <p class="text-xl text-text-muted dark:text-text-dark-muted">
+          A guide to working with me effectively.
+        </p>
+      </header>
+
+      <div class="grid gap-6 sm:grid-cols-2">
+        {sections.map((section) => (
+          <div class="rounded-2xl border border-border bg-muted p-6 dark:border-border-dark dark:bg-muted-dark">
+            <div class="mb-4 text-3xl">{getEmoji(section.icon)}</div>
+            <h2 class="font-heading text-lg font-semibold mb-4">{section.title}</h2>
+            <ul class="space-y-2">
+              {section.items.map((item) => (
+                <li class="text-sm text-text-muted dark:text-text-dark-muted flex items-start gap-2">
+                  <span class="text-accent dark:text-accent-dark mt-1.5 shrink-0">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 8 8">
+                      <circle cx="4" cy="4" r="3" />
+                    </svg>
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>

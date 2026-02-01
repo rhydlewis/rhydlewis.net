@@ -1,0 +1,217 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BentoCard from '../components/BentoCard.astro';
+import { getCollection } from 'astro:content';
+
+// Get the latest blog post
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort(
+  (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf()
+);
+const latestPost = sortedPosts[0];
+
+// Format date helper
+function formatDate(date: Date): string {
+  return new Intl.DateTimeFormat('en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  }).format(date);
+}
+---
+
+<BaseLayout title="Home" description="Software delivery consultant & guitar dabbler based in Whitstable, UK.">
+  <Header />
+
+  <main class="flex-1">
+    <div class="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
+      <!-- Bento Grid -->
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Hero Card - Main intro -->
+        <BentoCard class="sm:col-span-2 lg:row-span-2" span={2}>
+          <div class="flex h-full flex-col justify-between">
+            <div>
+              <h1 class="font-heading text-display mb-4">
+                Rhyd Lewis
+              </h1>
+              <p class="text-subtitle max-w-md">
+                Software delivery consultant & guitar dabbler based in Whitstable, UK.
+              </p>
+            </div>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="/about" class="btn btn-primary">
+                About me
+              </a>
+              <a href="/manual" class="btn btn-ghost">
+                How to work with me
+              </a>
+            </div>
+          </div>
+        </BentoCard>
+
+        <!-- Latest Post Card -->
+        {latestPost ? (
+          <BentoCard href={`/blog/${latestPost.slug}`}>
+            <div class="flex h-full flex-col">
+              <span class="text-xs font-medium uppercase tracking-wider text-text-muted dark:text-text-dark-muted">
+                Latest Post
+              </span>
+              <h2 class="mt-3 font-heading text-lg font-semibold leading-snug">
+                {latestPost.data.title}
+              </h2>
+              <p class="mt-2 text-sm text-text-muted dark:text-text-dark-muted">
+                {formatDate(new Date(latestPost.data.date))}
+              </p>
+              <div class="mt-auto pt-4">
+                <span class="text-sm font-medium text-accent dark:text-accent-dark">
+                  Read article <span class="bento-arrow">&rarr;</span>
+                </span>
+              </div>
+            </div>
+          </BentoCard>
+        ) : (
+          <BentoCard href="/writing">
+            <div class="flex h-full flex-col">
+              <span class="text-xs font-medium uppercase tracking-wider text-text-muted dark:text-text-dark-muted">
+                Writing
+              </span>
+              <h2 class="mt-3 font-heading text-lg font-semibold">
+                Browse Articles
+              </h2>
+              <div class="mt-auto pt-4">
+                <span class="text-sm font-medium text-accent dark:text-accent-dark">
+                  View all <span class="bento-arrow">&rarr;</span>
+                </span>
+              </div>
+            </div>
+          </BentoCard>
+        )}
+
+        <!-- Now Card -->
+        <BentoCard href="/now">
+          <div class="flex h-full flex-col">
+            <span class="text-xs font-medium uppercase tracking-wider text-text-muted dark:text-text-dark-muted">
+              Now
+            </span>
+            <h2 class="mt-3 font-heading text-lg font-semibold">
+              What I'm up to
+            </h2>
+            <p class="mt-2 text-sm text-text-muted dark:text-text-dark-muted">
+              Current focus, projects, and life updates.
+            </p>
+            <div class="mt-auto pt-4">
+              <span class="text-sm font-medium text-accent dark:text-accent-dark">
+                See now <span class="bento-arrow">&rarr;</span>
+              </span>
+            </div>
+          </div>
+        </BentoCard>
+
+        <!-- Music Card -->
+        <BentoCard class="sm:col-span-2" span={2}>
+          <div class="flex h-full flex-col">
+            <span class="text-xs font-medium uppercase tracking-wider text-text-muted dark:text-text-dark-muted">
+              Music
+            </span>
+            <h2 class="mt-3 font-heading text-xl font-semibold">
+              entMOOT & Solo Projects
+            </h2>
+            <p class="mt-2 text-text-muted dark:text-text-dark-muted">
+              Original compositions blending synths, guitars, drums and movie dialogue.
+            </p>
+            <div class="mt-auto flex flex-wrap gap-3 pt-6">
+              <a
+                href="https://open.spotify.com/artist/6HdybP67Hqp9kLsZeXvdgY"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-full bg-[#1DB954] px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
+              >
+                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+                </svg>
+                Spotify
+              </a>
+              <a
+                href="https://music.apple.com/gb/artist/entmoot/1669105995"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#fc3c44] to-[#fa233b] px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
+              >
+                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026-.747.043-1.49.123-2.193.4-1.336.53-2.3 1.452-2.865 2.78-.192.448-.292.925-.363 1.408-.056.392-.088.785-.1 1.18 0 .032-.007.062-.01.093v12.223c.01.14.017.283.027.424.05.815.154 1.624.497 2.373.65 1.42 1.738 2.353 3.234 2.801.42.127.856.187 1.293.228.555.053 1.11.06 1.667.06h11.03a12.5 12.5 0 001.57-.1c.822-.106 1.596-.35 2.295-.81a5.046 5.046 0 001.88-2.207c.186-.42.293-.87.37-1.324.113-.675.138-1.358.137-2.04-.002-3.8 0-7.595-.003-11.393zm-6.423 3.99v5.712c0 .417-.058.827-.244 1.206-.29.59-.76.962-1.388 1.14-.35.1-.706.157-1.07.173-.95.042-1.8-.228-2.403-.95-.825-.99-.825-2.432.2-3.41.41-.39.887-.628 1.422-.752.307-.07.62-.117.93-.172.31-.055.617-.114.92-.193.248-.064.46-.18.602-.404.1-.155.14-.333.14-.52V8.536a.515.515 0 00-.033-.2.35.35 0 00-.275-.24 1.473 1.473 0 00-.418-.038c-.96.013-1.917.047-2.876.082-.472.018-.944.042-1.416.067-.23.012-.46.04-.675.14-.206.097-.332.257-.373.482-.013.074-.02.15-.02.225v7.122c0 .463-.065.917-.27 1.334-.326.66-.853 1.065-1.57 1.235-.376.09-.764.133-1.156.126-.96-.015-1.81-.283-2.375-1.098-.6-.864-.547-2.07.192-2.906.398-.45.904-.727 1.472-.87.36-.092.73-.143 1.096-.188.397-.05.796-.09 1.18-.208.287-.088.513-.24.66-.512.09-.164.122-.345.122-.532V5.12c0-.27.048-.523.2-.748.187-.273.46-.392.765-.45.243-.047.492-.062.74-.077.76-.043 1.52-.07 2.28-.097 1.-.035 2.002-.058 3.004-.06.26 0 .518.014.77.084.298.084.52.25.657.533.07.145.1.3.1.46v4.323z" />
+                </svg>
+                Apple Music
+              </a>
+            </div>
+          </div>
+        </BentoCard>
+
+        <!-- Writing/Archive Card -->
+        <BentoCard href="/writing">
+          <div class="flex h-full flex-col">
+            <span class="text-xs font-medium uppercase tracking-wider text-text-muted dark:text-text-dark-muted">
+              Writing
+            </span>
+            <h2 class="mt-3 font-heading text-lg font-semibold">
+              {posts.length}+ Articles
+            </h2>
+            <p class="mt-2 text-sm text-text-muted dark:text-text-dark-muted">
+              On productivity, software, and music.
+            </p>
+            <div class="mt-auto pt-4">
+              <span class="text-sm font-medium text-accent dark:text-accent-dark">
+                Browse archive <span class="bento-arrow">&rarr;</span>
+              </span>
+            </div>
+          </div>
+        </BentoCard>
+
+        <!-- Tools Card -->
+        <BentoCard href="/tools">
+          <div class="flex h-full flex-col">
+            <span class="text-xs font-medium uppercase tracking-wider text-text-muted dark:text-text-dark-muted">
+              Tools
+            </span>
+            <h2 class="mt-3 font-heading text-lg font-semibold">
+              Things I've Built
+            </h2>
+            <p class="mt-2 text-sm text-text-muted dark:text-text-dark-muted">
+              MIDI converter, Flowcus, Alfred workflows.
+            </p>
+            <div class="mt-auto pt-4">
+              <span class="text-sm font-medium text-accent dark:text-accent-dark">
+                View tools <span class="bento-arrow">&rarr;</span>
+              </span>
+            </div>
+          </div>
+        </BentoCard>
+
+        <!-- Manual Card -->
+        <BentoCard href="/manual">
+          <div class="flex h-full flex-col">
+            <span class="text-xs font-medium uppercase tracking-wider text-text-muted dark:text-text-dark-muted">
+              Manual
+            </span>
+            <h2 class="mt-3 font-heading text-lg font-semibold">
+              How to Work With Me
+            </h2>
+            <p class="mt-2 text-sm text-text-muted dark:text-text-dark-muted">
+              Communication preferences and working style.
+            </p>
+            <div class="mt-auto pt-4">
+              <span class="text-sm font-medium text-accent dark:text-accent-dark">
+                Read manual <span class="bento-arrow">&rarr;</span>
+              </span>
+            </div>
+          </div>
+        </BentoCard>
+
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,323 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<BaseLayout title="Text to MIDI Converter" description="A simple text chord progression to MIDI generator.">
+  <Header />
+
+  <main class="flex-1">
+    <div class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+      <header class="mb-8">
+        <a
+          href="/tools"
+          class="inline-flex items-center gap-2 text-sm font-medium text-text-muted hover:text-accent dark:text-text-dark-muted dark:hover:text-accent-dark mb-4"
+        >
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+          </svg>
+          Back to Tools
+        </a>
+        <h1 class="font-heading text-display mb-4">Text to MIDI</h1>
+        <p class="text-subtitle">
+          Convert chord progressions to MIDI files.
+        </p>
+      </header>
+
+      <div class="rounded-2xl border border-border bg-muted p-6 dark:border-border-dark dark:bg-muted-dark">
+        <div class="space-y-6">
+          <div>
+            <label for="chord-input" class="block text-sm font-medium mb-2">
+              Enter chord progression
+            </label>
+            <textarea
+              id="chord-input"
+              placeholder="Example: C,Am,F,G"
+              rows="3"
+              class="w-full rounded-lg border border-border bg-surface px-4 py-3 text-sm placeholder:text-text-muted focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent dark:border-border-dark dark:bg-surface-dark dark:placeholder:text-text-dark-muted dark:focus:border-accent-dark dark:focus:ring-accent-dark"
+            ></textarea>
+            <p class="mt-2 text-sm text-text-muted dark:text-text-dark-muted">
+              Format: Comma-separated chords (e.g., "C,Am,F,G" or "Cmaj7,Dm7,G7,Cmaj7")
+              <br />Each chord will last for 1 bar in 4/4 time at 120 BPM
+            </p>
+          </div>
+
+          <div>
+            <label for="key-signature" class="block text-sm font-medium mb-2">
+              Key Signature
+            </label>
+            <select
+              id="key-signature"
+              class="w-full rounded-lg border border-border bg-surface px-4 py-3 text-sm focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent dark:border-border-dark dark:bg-surface-dark dark:focus:border-accent-dark dark:focus:ring-accent-dark"
+            >
+              <optgroup label="Major Keys">
+                <option value="C-major">C Major (no accidentals)</option>
+                <option value="G-major">G Major (1&#9839;)</option>
+                <option value="D-major">D Major (2&#9839;)</option>
+                <option value="A-major">A Major (3&#9839;)</option>
+                <option value="E-major">E Major (4&#9839;)</option>
+                <option value="B-major">B Major (5&#9839;)</option>
+                <option value="F#-major">F&#9839; Major (6&#9839;)</option>
+                <option value="C#-major">C&#9839; Major (7&#9839;)</option>
+                <option value="F-major">F Major (1&#9837;)</option>
+                <option value="Bb-major">B&#9837; Major (2&#9837;)</option>
+                <option value="Eb-major">E&#9837; Major (3&#9837;)</option>
+                <option value="Ab-major">A&#9837; Major (4&#9837;)</option>
+                <option value="Db-major">D&#9837; Major (5&#9837;)</option>
+                <option value="Gb-major">G&#9837; Major (6&#9837;)</option>
+                <option value="Cb-major">C&#9837; Major (7&#9837;)</option>
+              </optgroup>
+              <optgroup label="Minor Keys">
+                <option value="A-minor">A Minor (no accidentals)</option>
+                <option value="E-minor">E Minor (1&#9839;)</option>
+                <option value="B-minor">B Minor (2&#9839;)</option>
+                <option value="F#-minor">F&#9839; Minor (3&#9839;)</option>
+                <option value="C#-minor">C&#9839; Minor (4&#9839;)</option>
+                <option value="G#-minor">G&#9839; Minor (5&#9839;)</option>
+                <option value="D#-minor">D&#9839; Minor (6&#9839;)</option>
+                <option value="A#-minor">A&#9839; Minor (7&#9839;)</option>
+                <option value="D-minor">D Minor (1&#9837;)</option>
+                <option value="G-minor">G Minor (2&#9837;)</option>
+                <option value="C-minor">C Minor (3&#9837;)</option>
+                <option value="F-minor">F Minor (4&#9837;)</option>
+                <option value="Bb-minor">B&#9837; Minor (5&#9837;)</option>
+                <option value="Eb-minor">E&#9837; Minor (6&#9837;)</option>
+                <option value="Ab-minor">A&#9837; Minor (7&#9837;)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <button
+            id="generate-btn"
+            type="button"
+            class="w-full btn btn-primary py-3"
+          >
+            Generate MIDI
+          </button>
+
+          <div id="status-message" class="text-sm text-center"></div>
+
+          <div id="download-container" class="hidden text-center">
+            <a
+              id="download-link"
+              class="btn btn-primary inline-flex items-center gap-2"
+            >
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+              </svg>
+              Download MIDI
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-sm text-text-muted dark:text-text-dark-muted">
+        <p>
+          Built with <a href="https://github.com/tonaljs/tonal" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-hover dark:text-accent-dark dark:hover:text-accent-dark-hover underline underline-offset-2">Tonal.js</a> and <a href="https://github.com/dingram/jsmidgen" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-hover dark:text-accent-dark dark:hover:text-accent-dark-hover underline underline-offset-2">jsmidgen</a>.
+          <a href="https://github.com/rhydlewis/text-to-midi" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-hover dark:text-accent-dark dark:hover:text-accent-dark-hover underline underline-offset-2">View source on GitHub</a>.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<script src="https://cdn.jsdelivr.net/npm/tonal/browser/tonal.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsmidgen@0.1.5/lib/jsmidgen.js"></script>
+
+<script>
+  // Ensure libraries are globally accessible
+  window.jsmidgen = (window as any).Midi;
+
+  // MIDI generation logic
+  const textToMidi = (() => {
+    function parseChordText(text: string): string[] {
+      return text.split(/,\s*/).filter((chord) => chord);
+    }
+
+    function parseChord(chordName: string): string[] {
+      try {
+        const tonalLib = (window as any).Tonal;
+        if (!tonalLib) throw new Error('Tonal library not loaded');
+
+        const chord = tonalLib.Chord.get(chordName);
+        if (chord && chord.notes && chord.notes.length > 0) {
+          return chord.notes.map((note: string) => (/\d/.test(note) ? note : note + '3'));
+        }
+
+        const rootNote = chordName.charAt(0).toUpperCase();
+        if ('ABCDEFG'.includes(rootNote)) return [rootNote + '3'];
+        return [];
+      } catch {
+        const rootNote = chordName.charAt(0).toUpperCase();
+        if ('ABCDEFG'.includes(rootNote)) return [rootNote + '3'];
+        return [];
+      }
+    }
+
+    function noteToMidi(note: string): number | null {
+      try {
+        const tonalLib = (window as any).Tonal;
+        if (!tonalLib) throw new Error('Tonal library not loaded');
+        return tonalLib.Note.midi(note);
+      } catch {
+        return null;
+      }
+    }
+
+    function convertKeySignatureToMidi(keySignature: string): [number, number] {
+      let sharpsFlats = 0;
+      let mode = 0;
+
+      if (!keySignature) return [sharpsFlats, mode];
+
+      const parts = keySignature.split('-');
+      const note = parts[0];
+      const keyMode = parts[1] || 'major';
+      mode = keyMode === 'minor' ? 1 : 0;
+
+      const sharpFlatMap: Record<string, number> = {
+        C: 0, G: 1, D: 2, A: 3, E: 4, B: 5, 'F#': 6, 'C#': 7,
+        F: -1, Bb: -2, Eb: -3, Ab: -4, Db: -5, Gb: -6, Cb: -7,
+      };
+
+      if (mode === 1) {
+        const minorMap: Record<string, number> = {
+          C: -3, G: -2, D: -1, A: 0, E: 1, B: 2, 'F#': 3,
+        };
+        sharpsFlats = minorMap[note] ?? sharpFlatMap[note] ?? 0;
+      } else {
+        sharpsFlats = sharpFlatMap[note] ?? 0;
+      }
+
+      return [sharpsFlats, mode];
+    }
+
+    function generateMidi(inputText: string, options: any) {
+      const chordText = inputText || '';
+      const { statusEl, downloadContainerEl, downloadLinkEl, keySignature } = options;
+
+      if (!chordText) {
+        if (statusEl) {
+          statusEl.textContent = 'Please enter a chord progression';
+          statusEl.className = 'text-red-500';
+        }
+        return null;
+      }
+
+      try {
+        if (statusEl) {
+          statusEl.textContent = 'Generating MIDI...';
+          statusEl.className = 'text-text-muted dark:text-text-dark-muted';
+        }
+        if (downloadContainerEl) downloadContainerEl.classList.add('hidden');
+
+        const chords = parseChordText(chordText);
+        if (chords.length === 0) {
+          if (statusEl) {
+            statusEl.textContent = 'No valid chords found';
+            statusEl.className = 'text-red-500';
+          }
+          return null;
+        }
+
+        const jsmidgen = (window as any).jsmidgen;
+        const file = new jsmidgen.File();
+        const track = new jsmidgen.Track();
+        file.addTrack(track);
+
+        track.setTempo(120);
+        track.setInstrument(0, 0);
+
+        const [sharpsFlats, mode] = convertKeySignatureToMidi(keySignature);
+        const MetaEvent = jsmidgen.MetaEvent;
+        track.addEvent(
+          new MetaEvent({
+            type: MetaEvent.KEY_SIG,
+            data: [sharpsFlats, mode],
+            time: 0,
+          })
+        );
+
+        const QUARTER_NOTE = 128;
+        const BAR_LENGTH = QUARTER_NOTE * 4;
+
+        for (const chordName of chords) {
+          const notes = parseChord(chordName);
+          if (notes.length === 0) {
+            track.noteOn(0, 0, 0);
+            track.noteOff(0, 0, BAR_LENGTH);
+            continue;
+          }
+
+          const midiNotes = notes
+            .map((note) => noteToMidi(note))
+            .filter((n): n is number => n !== null);
+
+          if (midiNotes.length === 0) {
+            track.noteOn(0, 0, 0);
+            track.noteOff(0, 0, BAR_LENGTH);
+            continue;
+          }
+
+          track.chord(0, midiNotes, BAR_LENGTH, 90);
+        }
+
+        const midiData = file.toBytes();
+        if (!midiData || midiData.length === 0) {
+          throw new Error('Failed to generate MIDI data');
+        }
+
+        const byteArray = new Uint8Array(midiData.length);
+        for (let i = 0; i < midiData.length; i++) {
+          byteArray[i] = midiData.charCodeAt(i);
+        }
+
+        const blob = new Blob([byteArray], { type: 'audio/midi' });
+        const url = URL.createObjectURL(blob);
+
+        if (downloadLinkEl) {
+          downloadLinkEl.href = url;
+          downloadLinkEl.download = 'chord-progression.mid';
+        }
+
+        if (statusEl) {
+          statusEl.textContent = 'MIDI file generated successfully!';
+          statusEl.className = 'text-green-600 dark:text-green-400';
+        }
+        if (downloadContainerEl) downloadContainerEl.classList.remove('hidden');
+
+        return { midiData, processedChords: chords };
+      } catch (error: any) {
+        if (statusEl) {
+          statusEl.textContent = 'Error generating MIDI: ' + error.message;
+          statusEl.className = 'text-red-500';
+        }
+        return null;
+      }
+    }
+
+    return { generateMidi };
+  })();
+
+  // DOM setup
+  document.addEventListener('DOMContentLoaded', () => {
+    const chordInput = document.getElementById('chord-input') as HTMLTextAreaElement;
+    const keySignature = document.getElementById('key-signature') as HTMLSelectElement;
+    const generateBtn = document.getElementById('generate-btn');
+    const statusMessage = document.getElementById('status-message');
+    const downloadContainer = document.getElementById('download-container');
+    const downloadLink = document.getElementById('download-link');
+
+    generateBtn?.addEventListener('click', () => {
+      textToMidi.generateMidi(chordInput.value, {
+        statusEl: statusMessage,
+        downloadContainerEl: downloadContainer,
+        downloadLinkEl: downloadLink,
+        keySignature: keySignature.value,
+      });
+    });
+  });
+</script>

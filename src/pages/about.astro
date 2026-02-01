@@ -1,0 +1,229 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const companies = [
+  { name: 'Equal Experts', logo: '/img/logo_equalexperts.png' },
+  { name: '11:FS Foundry', logo: '/img/logo_11fs.png' },
+  { name: 'HMRC', logo: '/img/logo_hmrc.png' },
+  { name: 'Barclays', logo: '/img/logo_barclays.png' },
+  { name: 'FlexTrade', logo: '/img/logo_flextrade.png' },
+  { name: 'Home Office', logo: '/img/logo_homeoffice.png' },
+  { name: 'MergerMarket', logo: '/img/logo_mergermarket.png' },
+  { name: 'Telefonica', logo: '/img/logo_telefonica.png' },
+];
+
+const musicLinks = {
+  rhydLewis: {
+    spotify: 'https://open.spotify.com/artist/4pIyMWReoHoNybLHAbzOGK',
+    apple: 'https://music.apple.com/gb/artist/rhyd-lewis/1716733982',
+  },
+  entmoot: {
+    spotify: 'https://open.spotify.com/artist/6HdybP67Hqp9kLsZeXvdgY',
+    apple: 'https://music.apple.com/gb/artist/entmoot/1669105995',
+  },
+};
+
+const podcastLinks = {
+  spotify: 'https://open.spotify.com/show/4UACxKSbtgRbSg5KfFy621',
+  apple: 'https://podcasts.apple.com/gb/podcast/rethinking-work-life-with-rhyd-lewis/id1652090407',
+};
+---
+
+<BaseLayout title="About" description="Software delivery consultant & guitar dabbler based in Whitstable, UK.">
+  <Header />
+
+  <main class="flex-1">
+    <div class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+      <header class="mb-12">
+        <h1 class="font-heading text-display mb-4">About</h1>
+        <p class="text-xl text-text-muted dark:text-text-dark-muted">
+          Alright? I'm Rhyd, a consultant & musician based in Whitstable in the UK.
+        </p>
+      </header>
+
+      <div class="prose prose-lg dark:prose-dark max-w-none">
+        <p>
+          I'm a passionate guitarist, musician and consultant. Music has always been a driving force in my life, whether it's
+          <a href={musicLinks.rhydLewis.spotify} target="_blank" rel="noopener noreferrer">playing guitar & composing as myself</a>
+          or dabbling with synths and movie dialogue as my alter-ego,
+          <a href={musicLinks.entmoot.spotify} target="_blank" rel="noopener noreferrer">entMOOT</a>.
+          When I'm not trying to remember the notes of a Gadd9 chord, I might be out for a slow run.
+        </p>
+
+        <p>
+          I'm fascinated by what makes people tick so I've been hosting the podcast
+          <a href="https://rethinkingworklife.net" target="_blank" rel="noopener noreferrer">Rethinking Work & Life</a>.
+          Although currently on a slight hiatus, the show has been a platform for me to delve into the thinking and experiences of some brilliant individuals.
+        </p>
+
+        <p>
+          I also maintain the moderately popular productivity
+          <a href="https://alfred.app/" target="_blank" rel="noopener noreferrer">Alfred.app</a> workflow,
+          <a href="https://github.com/rhydlewis/alfred-search-omnifocus" target="_blank" rel="noopener noreferrer">"Search OmniFocus"</a>
+          which helps people quickly find and access their
+          <a href="https://www.omnigroup.com/omnifocus/" target="_blank" rel="noopener noreferrer">OmniFocus</a> information.
+        </p>
+      </div>
+
+      <!-- Music Section -->
+      <section class="mt-16">
+        <h2 class="font-heading text-2xl font-semibold mb-8">Music</h2>
+
+        <div class="grid gap-6 sm:grid-cols-2">
+          <!-- Rhyd Lewis Music -->
+          <div class="rounded-2xl border border-border bg-muted p-6 dark:border-border-dark dark:bg-muted-dark">
+            <div class="flex items-center gap-4 mb-4">
+              <img
+                src="/img/rhydlewis.jpg"
+                alt="Rhyd Lewis"
+                class="w-16 h-16 rounded-full object-cover"
+              />
+              <div>
+                <h3 class="font-heading font-semibold">Rhyd Lewis</h3>
+                <p class="text-sm text-text-muted dark:text-text-dark-muted">
+                  Cover & original songs
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <a
+                href={musicLinks.rhydLewis.spotify}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-full bg-[#1DB954] px-3 py-1.5 text-sm font-medium text-white hover:opacity-90"
+              >
+                Spotify
+              </a>
+              <a
+                href={musicLinks.rhydLewis.apple}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#fc3c44] to-[#fa233b] px-3 py-1.5 text-sm font-medium text-white hover:opacity-90"
+              >
+                Apple Music
+              </a>
+            </div>
+          </div>
+
+          <!-- entMOOT Music -->
+          <div class="rounded-2xl border border-border bg-muted p-6 dark:border-border-dark dark:bg-muted-dark">
+            <div class="flex items-center gap-4 mb-4">
+              <img
+                src="/img/entmoot.png"
+                alt="entMOOT"
+                class="w-16 h-16 rounded-full object-cover"
+              />
+              <div>
+                <h3 class="font-heading font-semibold">entMOOT</h3>
+                <p class="text-sm text-text-muted dark:text-text-dark-muted">
+                  Synths, guitars & movie dialogue
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <a
+                href={musicLinks.entmoot.spotify}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-full bg-[#1DB954] px-3 py-1.5 text-sm font-medium text-white hover:opacity-90"
+              >
+                Spotify
+              </a>
+              <a
+                href={musicLinks.entmoot.apple}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#fc3c44] to-[#fa233b] px-3 py-1.5 text-sm font-medium text-white hover:opacity-90"
+              >
+                Apple Music
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Podcast Section -->
+      <section class="mt-16">
+        <h2 class="font-heading text-2xl font-semibold mb-8">Podcast</h2>
+
+        <div class="rounded-2xl border border-border bg-muted p-6 dark:border-border-dark dark:bg-muted-dark">
+          <div class="flex items-center gap-4 mb-4">
+            <img
+              src="/img/podcast.png"
+              alt="Rethinking Work & Life"
+              class="w-16 h-16 rounded-lg object-cover"
+            />
+            <div>
+              <h3 class="font-heading font-semibold">Rethinking Work & Life</h3>
+              <p class="text-sm text-text-muted dark:text-text-dark-muted">
+                The podcast that uncovers the defining moments that make people rethink their work & life.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <a
+              href={podcastLinks.spotify}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 rounded-full bg-[#1DB954] px-3 py-1.5 text-sm font-medium text-white hover:opacity-90"
+            >
+              Spotify
+            </a>
+            <a
+              href={podcastLinks.apple}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#fc3c44] to-[#fa233b] px-3 py-1.5 text-sm font-medium text-white hover:opacity-90"
+            >
+              Apple Podcasts
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Section -->
+      <section class="mt-16">
+        <h2 class="font-heading text-2xl font-semibold mb-6">Work</h2>
+
+        <div class="prose prose-lg dark:prose-dark max-w-none mb-8">
+          <p>
+            With over 20 years of experience in software engineering and product management, I help organizations rethink how they deliver value to their customers. I'm a passionate and experienced leader. I've helped organisations and teams around the world create amazing products by providing expertise and guidance as a consultant, product manager and engineer.
+          </p>
+          <p>
+            I apply lean, agile, and systems thinking principles to solve complex problems. I'm pragmatic, down-to-earth and focus on communication, clarity on 'why' and ensuring everyone feels valued and enjoys working together.
+          </p>
+        </div>
+
+        <h3 class="font-heading text-lg font-semibold mb-6 text-text-muted dark:text-text-dark-muted">
+          Companies I've helped
+        </h3>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+          {companies.map((company) => (
+            <div class="flex items-center justify-center p-4 rounded-lg bg-white dark:bg-muted-dark">
+              <img
+                src={company.logo}
+                alt={company.name}
+                class="max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 dark:invert dark:opacity-50 dark:hover:opacity-80"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .prose a {
+    @apply text-accent underline underline-offset-2 hover:text-accent-hover dark:text-accent-dark dark:hover:text-accent-dark-hover;
+  }
+
+  .prose p {
+    @apply mb-5 leading-relaxed text-text dark:text-text-dark;
+  }
+</style>

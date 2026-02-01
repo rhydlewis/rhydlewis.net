@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Page Not Found">
+  <Header />
+
+  <main class="flex-1 flex items-center justify-center">
+    <div class="mx-auto max-w-lg px-4 py-16 text-center">
+      <h1 class="font-heading text-9xl font-bold text-muted dark:text-muted-dark">
+        404
+      </h1>
+      <h2 class="font-heading text-2xl font-semibold mt-4 mb-2">
+        Page not found
+      </h2>
+      <p class="text-text-muted dark:text-text-dark-muted mb-8">
+        Sorry, the page you're looking for doesn't exist or has been moved.
+      </p>
+      <a href="/" class="btn btn-primary">
+        Go home
+      </a>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>

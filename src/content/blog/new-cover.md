@@ -1,0 +1,22 @@
+---
+title: "'For My Lover' Cover Released"
+date: 2024-04-30
+tags:
+  - music
+---
+
+I'm slightly late in shouting about it here but let's crack on shall we? I released a cover of the Tracy Chapman song "For My Lover" late last year. Very pleased with how it turned out.
+
+Here's the full version:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qRfdblal87M?si=9dXWRRXjVAkkiugp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+And here's the instrumental version with an improvised guitar part replacing the singing:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QMM94A_tEb0?si=lEW2Ef-o2rgCW8S5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+The Logic Pro project ended up quite large - nearly a gig - so I think I've probably got some unused audio takes hanging around. Things I learned:
+
+1. Mixing is painful - this is definitely not my forte.
+2. Listening to your own voice played back repeatedly takes patience
+3. Delay as an effect needs some TLC when thrown in
+
+<img src="/img/2024-04-30-fml-logic-pro.jpg" class="w-full rounded-lg" alt="Screenshot of Logic Pro" loading="lazy">
