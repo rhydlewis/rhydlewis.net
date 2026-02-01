@@ -96,7 +96,6 @@ A guide to working with me effectively
         <ul>
           <li>I sometimes play guitar whilst thinking through a problem - it helps me focus</li>
           <li>I create and release original music under the alias "entMOOT". Feel free to ask me about it if you're interested in the odd combination of movie dialogue, guitars and electronic music.</li>
-          <li>I am nerd when it comes to organising my life and work. I track nearly everything and get a bit OCD about it.</li>
         </ul>
       </div>
     </div>
