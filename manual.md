@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Manual
+title: Manual of Me
 permalink: /manual/
 background: /img/bg-book-notes.jpg
-description: Manual of Me - How to work with Rhyd
+description: How to work with Rhyd
 ---
 
 <style>
@@ -54,6 +54,7 @@ A guide to working with me effectively
           <li>Through practical demonstrations & Hands-on practice and application</li>
           <li>Direct experience with new concepts</li>
           <li>Learning by doing rather than theoretical discussion</li>
+          <li>Exploring unfamiliar territory</li>
         </ul>
       </div>
     </div>
@@ -63,9 +64,8 @@ A guide to working with me effectively
         <span class="section-icon">⚠️</span>
         <h3>Things I Struggle With</h3>
         <ul>
-          <li>EQ-related problems</li>
           <li>Overly long/unnecessary meetings</li>
-          <li>Bullshit/waffle/jargon</li>
+          <li>Communication lacking clarity/purpose</li>
           <li>Email-heavy communication</li>
           <li>Meetings without agenda/purpose</li>
         </ul>
@@ -77,11 +77,13 @@ A guide to working with me effectively
         <span class="section-icon">❤️</span>
         <h3>Things I Love</h3>
         <ul>
-          <li>Tackling novel and challenging technical problems</li>
+          <li>Tackling novel and challenging problems</li>
           <li>Running - I will sometimes need to head out to clear my head</li>
           <li>Structured, regular check-ins</li>
           <li>Talking to people</li>
           <li>Independent problem-solving followed by collaboration</li>
+          <li>Connecting & helping people</li>
+          <li>Building things from scratch</li>
           <li>Music, running and time away from work.</li>
         </ul>
       </div>
@@ -107,6 +109,7 @@ A guide to working with me effectively
           <li>Independent thinking time before collaboration</li>
           <li>Regular check-ins on "big work"</li>
           <li>Clear, efficient communication</li>
+          <li>Space to think before action</li>
           <li>Focused meeting times with specific objectives</li>
           <li>Time to process information independently</li>
         </ul>
@@ -132,7 +135,7 @@ A guide to working with me effectively
         <h3>Best Ways to Communicate with Me</h3>
         <ul>
           <li>Via Slack - you can normally expect a response within minutes during work hours</li>
-          <li>Keep meetings short (25-30 minutes maximum)</li>
+          <li>Prefer focused meetings — 25-30 minutes where possible</li>
           <li>Avoid scheduling default 1-hour meetings</li>
           <li>For urgent matters, send a Slack message even if I appear busy. Worst case, call me.</li>
           <li>Use plain English in an active tone ("Please review this" rather than "This needs to be reviewed")</li>
